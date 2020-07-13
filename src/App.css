@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  color: black;
+  background-color: #D2BAB6;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#home{
+  background-color: #D2BAB6;
   color: white;
+  width: 100%;
+  font-family: 'Gruppo';font-size: 50px;
+
+
+
+  /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* z-index: -1; */
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#me{
+  position: relative;
+  /* width: 65%; */
+  max-width: 100vh;
+  height: auto;
+  left: 15vw;
+  top: 15.4vh;
+  /* filter: blur(.4px); */
+
+}
+.title{
+  position: relative;
+  z-index: 9;
+  left:5vw;
+  top:60vh
+}
+#about{
+  background-color:white;
+
+}
+#contact{
+  background-color:rgb(167, 164, 164)
+}
+#projects{
+  background-color:rgb(139, 137, 137)
+}
+.sidenav {
+  height: 100%;
+  width: 16vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #735972;
+  overflow: hidden;
+  padding-top: 11vw;
+}
+
+.sidenav a {
+  position: relative;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #818181;
+  display: block;
+  left: 9%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.open,.closebtn{
+  visibility: hidden;
+  
+} 
+.icon{
+  position: relative;
+  width: 3.5vh;
+}
+.home{
+  top: -5vh;
+
+}
+.contact{
+  top:-4vh
+}
+.woman{
+  width: 4.3vh;
+
+  top:-5vh
+}
+.computer{
+  width: 3.8vh;
+
+  top:-4.5vh
+}
+.me{
+  position: relative;
+  bottom:15vh;
+  left: 4vh;
+  max-width: 10vw;
+  max-height: 20vh;
+  border-radius: 50%;
+
+}
+.box-nav{
+  position: relative;
+  bottom: 10vh;
+}
+@media only screen and (max-width: 600px) {
+  /* #me{
+    max-width: 100vh;
+    height: auto;
+    left: 15vw;
+    top: 6.4vh;  } */
+    .icon,.me{
+      display: none;
+    }
+  .sidenav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sidenav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    top: 3em;
+  }
+  
+  .sidenav a:hover {
+    background: #ddd;
+    color: black;
   }
 }
