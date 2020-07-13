@@ -19,7 +19,14 @@ render(){
                 <img alt='pic' className='icon contact'src={require('../imgs/contact.png')}/>
 
                 <a href='#projects'>Projects</a>
-                <img alt='pic' className='icon computer'src={require('../imgs/computer.png')}/> 
+                 <img alt='pic' className='icon computer'src={require('../imgs/computer.png')}/> 
+
+                <div className='social'>
+                <img alt='pic' className='icon social'src={require('../imgs/git.png')}/>
+                <img alt='pic' className='icon social'src={require('../imgs/instagram.png')}/>
+                <img alt='pic' className='icon social'src={require('../imgs/medium.png')}/>
+                <img alt='pic' className='icon social'src={require('../imgs/linkedin.png')}/>
+                </div>
      </div>
            
           
