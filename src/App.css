@@ -76,13 +76,15 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 2vw;
-  color: #818181;
+  color: white;
   display: block;
   left: 9%;
+  font-weight: 200; 
+
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #818181;;
 }
 
 .open,.closebtn{
@@ -106,14 +108,14 @@ body {
   top:-5vh
 }
 .computer{
-  width: 3.8vh;
+  width: 3.5vh;
 
   top:-4.5vh
 }
 .me{
   position: relative;
-  bottom:15vh;
-  left: 4vh;
+  bottom:18vh;
+  left: 7vh;
   max-width: 10vw;
   max-height: 20vh;
   border-radius: 50%;
@@ -121,17 +123,37 @@ body {
 }
 .box-nav{
   position: relative;
-  bottom: 10vh;
+  bottom: 6vh;
+    left: 5vh;
+
 }
 .social{
   position: relative;
-  top: 8vh;
+  top: 1vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   /* padding: 10px; */
-  left: .6vh;
+  /* left: -3vh; */
+  width: 3.5vh;
 
   
+  
+
+}
+.job{
+  position: relative;
+  border:  solid transparent;
+  background-color: rgba(17, 17, 17, 0.329);
+  border-radius: 15px;
+  max-width: 65%;
+  padding: 1.5%;
+  color: white;
+  top: 10vh;
+  left: 5vh;
+}
+.social:hover{
+  position: relative;
+  width: 5vh;
 
 }
 @media only screen and (max-width: 600px) {
