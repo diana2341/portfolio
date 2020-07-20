@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 export default class Page extends Component{
     constructor(props) {
       super(props);
@@ -27,8 +29,30 @@ export default class Page extends Component{
      }
    
    
+   
 render(){
-  
+
+   let openUp=(e) =>{
+      
+      document.getElementById("myModal").style.display = "block";
+      console.log('opened')
+
+      
+
+   }
+   
+   // When the user clicks on <span> (x), close the modal
+   let close=(e)=> {
+   document.getElementById("myModal").style.display = "none";
+
+
+   }
+   
+   // When the user clicks anywhere outside of the modal, close it
+   window.onclick = function(event) {
+     if (event.target == document.getElementById("myModal")) {
+      document.getElementById("myModal").style.display = "none";
+     }}
     return(
         <>
         
@@ -115,6 +139,71 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
 </section>
 <section id='projects' className="section">
 	<h2 className="title2">Projects</h2>
+   <br></br>
+   <br></br>
+   <div id="myModal" class="modal">
+
+<div className="modal-content">
+  <div className="modal-header">
+    <span onClick={close} className="close">&times;</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div className="modal-body">
+    <p>Some text in the Modal Body</p>
+    <p>Some other text...</p>
+  </div>
+  <div className="modal-footer">
+    <h3>Modal Footer</h3>
+  </div>
+</div>
+
+</div>
+
+  
+   <div className="row flex">
+
+			<div className="col-lg-4 col-sm-6">
+         <div className="middle">
+         <button onClick={openUp}className="text">John Doe</button>
+  </div>
+  
+  
+  
+				<div className="thumbnail one">
+					<img className='pic'src={require('../imgs/endangered.png')}/>
+      
+				</div>
+            
+			</div>
+			<div className="col-lg-4 col-sm-6">
+        
+         <div className="middle">
+         <button onClick={openUp}className="text">John Doe</button>
+  </div>
+				<div className="thumbnail two">
+            <img className='pic' src={require('../imgs/cupcakes.png')}/>
+				</div>
+			</div>
+         <div className="w-100"></div>
+			<div className="col-lg-4 col-sm-6">
+         <div className="middle">
+         <button onClick={openUp}className="text">John Doe</button>
+  </div>
+				<div className="thumbnail three">
+            <img className='pic' src={require('../imgs/illucid.png')}/>
+				</div>
+			</div>
+			<div className="col-lg-4 col-sm-6">
+         <div className="middle">
+         <button onClick={openUp}className="text">John Doe</button>
+  </div>
+				<div className="thumbnail four">
+            <img className='pic' src={require('../imgs/travel.png')}/>
+				</div>
+			</div>
+		</div>
+
+
 </section>
 <section id='contact' className="section">
 	<h2 className="title3">Contact</h2><br></br>
