@@ -317,7 +317,7 @@ body {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: green;
+  background-color: white;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -342,21 +342,31 @@ body {
 .name-p{
   position: relative;
   left: 60%;
+  bottom: -15vh;
+
 }
 .description{
   position: relative;
   left: 60%;
-  width:40%
+  width:40%;
+  bottom: -12vh;
+}
+.tech{
+  position: relative;
+  left: 60%;
+  /* width:40%; */
+  bottom: -29vh; 
 }
 #iframe{
   position: relative;
   top:-10vh
 }
-#frame{
-}
+
 .tools{
 position: relative;
 left: 60%;
+bottom: -25vh;
+
 }
 .close:hover,
 .close:focus {
@@ -367,7 +377,7 @@ left: 60%;
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: grey;
   color: white;
 }
 
@@ -375,7 +385,7 @@ left: 60%;
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: grey;
   color: white;
 }
 
@@ -383,6 +393,9 @@ left: 60%;
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
   to {top:0; opacity:1}
+}
+.carousel-control-next,.carousel-control-prev{
+  background-color: rgba(24, 23, 23, 0.233);
 }
 
 @keyframes animatetop {

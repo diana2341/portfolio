@@ -103,66 +103,28 @@ render(){
           
 
         </div>
-        {/* <span className="open "onClick={()=>openNav()}>&#9776; </span> */}
-        <section id='home'className="section">
+]        <section id='home'className="section">
             <div className="box">
                <h2 className="title">Hi, My name is Diana Ponce</h2>
-    {/* <img alt='pic'id='me' src={require('../imgs/me.png')}/>  */}
             </div>
 	
 </section>
+{/* ////////////////// */}
 <section id='about' className="section">
-	{/* <h2 className="about-content">I'm a Full-Stack Developer based in Long Island, New York.
-This is my way to express creativity. Thinking of an idea drawing it out and then seeing your work come to life is beautiful! 
- </h2> */}
-{/* <Container fluid> */}
 
-{/* <ul class="list-group flex-md-row"> */}
-
-    {/* <p className='ls'>Here are a few technologies I've been working with recently:</p><br/> */}
-    {/* <hr/> */}
-    {/* <label className='label'>
-       HTML
-       </label> */}
-       
-      {/* <li class="list-group-item"> <img alt='pic'className='skills html' src={require('../imgs/html.png')}/> </li> */}
-    {/* <label className='label'>Javascript       </label> */}
-
-    {/* <li class="list-group-item"> <img alt='pic'className='skills' src={require('../imgs/javascript.png')}/> </li> */}
-    {/* <label className='label'>CSS       </label> */}
-
-    {/* <li class="list-group-item"> <img alt='pic'className='skills' src={require('../imgs/css.png')}/> </li> */}
-    {/* <label className='label'>Ruby On Rails       </label> */}
-
-
-    {/* <li class="list-group-item"> <img alt='pic'className='skills rails' src={require('../imgs/rails.png')}/> </li> */}
-    {/* <label className='label'>Ruby       </label> */}
-
-
-    {/* <li class="list-group-item"><img alt='pic'className='skills ruby' src={require('../imgs/ruby.png')}/> </li> */}
-    {/* <label className='label'>PostgreSQL       </label> */}
-
-
-    {/* <li class="list-group-item"> <img alt='pic'className='skills postgres' src={require('../imgs/postgres.png')}/> </li> */}
-{/* <label className='label'>React       </label> */}
-
-
-{/* <li class="list-group-item"> <img alt='pic'className='skills react' src={require('../imgs/react.png')}/> </li> */}
-
-   
-{/* </ul>
-</Container> */}
 
 
 </section>
+
+{/* /////////////// */}
 <section id='projects' className="section">
 	<h2 className="title2">Projects</h2>
    <br></br>
    <br></br>
    <div id="myModal" className ="modal">
-{this.state.project.map(info=>
+{this.state.project.map((info,index)=>
   
-<div className="modal-content">
+<div key={index}className="modal-content">
   <div className="modal-header">
 
 
@@ -171,7 +133,8 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
     <h2>Modal Header</h2>
   </div>
   <div className="modal-body">
-<h1 className='name-p'>Name:{info.name}</h1>
+<h1 className='name-p'>{info.name}</h1>
+<h2 className='tech'>Technologies used:</h2>
 <p className='description'>{info.description}</p>
   </div>
 <p className='tools'>{info.tools.split(',').map((line,index) => <li key={index} className="line">{line}</li> )}</p>
@@ -228,8 +191,76 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
-  </Carousel.Item>:''
-  }
+  </Carousel.Item>
+  :''}
+  {info.pic5?
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic5}
+      alt="Third slide"
+    />
+   
+
+    
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  :''}
+  {info.pic6?
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic6}
+      alt="Third slide"
+    />
+   
+
+    
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  :''}
+  {info.pic7?
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic7}
+      alt="Third slide"
+    />
+   
+
+    
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  :''}
+  {info.pic8?
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic8}
+      alt="Third slide"
+    />
+   
+
+    
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  :''}
 </Carousel>
   <div className="modal-footer">
     <h3>Modal Footer</h3>
