@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
-import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import info from './Info';
+import Carousel from 'react-bootstrap/Carousel'
 export default class Page extends Component{
     constructor(props) {
       super(props);
-      this.state = { feedback: '', name: 'Name', email: 'email@example.com' };
+      this.state = { 
+         feedback: '',
+         name: 'Name', 
+         email: 'email@example.com' ,
+         project:[]
+         
+   };
 
      }
+    
      
      handleSubmit= (event)=>{
       const templateId = "template_OSnwlhmv";;
@@ -28,16 +34,28 @@ export default class Page extends Component{
         .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
      }
    
-   
+  
    
 render(){
 
    let openUp=(e) =>{
-      
-      document.getElementById("myModal").style.display = "block";
-      console.log('opened')
+      if(e.target.id==='1'){
+        this.setState({project:info.filter(info=>info.id===1? info:'')})
 
-      
+      }
+      if(e.target.id==='2'){
+         this.setState({project:info.filter(info=>info.id===2? info:'')})
+ 
+       }
+       if(e.target.id==='3'){
+         this.setState({project:info.filter(info=>info.id===3? info:'')})
+ 
+       }
+       if(e.target.id==='4'){
+         this.setState({project:info.filter(info=>info.id===4? info:'')})
+ 
+       }
+      document.getElementById("myModal").style.display = "block"; 
 
    }
    
@@ -50,12 +68,12 @@ render(){
    
    // When the user clicks anywhere outside of the modal, close it
    window.onclick = function(event) {
-     if (event.target == document.getElementById("myModal")) {
+     if (event.target === document.getElementById("myModal")) {
       document.getElementById("myModal").style.display = "none";
      }}
     return(
         <>
-        
+
         <div id="mySidenav" className='sidenav'>
         <img alt='pic' className="me" src={require('../imgs/me2.JPG')}/> 
 
@@ -141,22 +159,84 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
 	<h2 className="title2">Projects</h2>
    <br></br>
    <br></br>
-   <div id="myModal" class="modal">
-
+   <div id="myModal" className ="modal">
+{this.state.project.map(info=>
+  
 <div className="modal-content">
   <div className="modal-header">
+
+
+
     <span onClick={close} className="close">&times;</span>
     <h2>Modal Header</h2>
   </div>
   <div className="modal-body">
-    <p>Some text in the Modal Body</p>
-    <p>Some other text...</p>
+<h1 className='name-p'>Name:{info.name}</h1>
+<p className='description'>{info.description}</p>
   </div>
+<p className='tools'>{info.tools.split(',').map((line,index) => <li key={index} className="line">{line}</li> )}</p>
+
+
+  <Carousel id='iframe' indicator="false">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic1}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+  <img
+      className="d-block w-100"
+      src={info.pic2}
+      alt="Third slide"
+    />     
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic3}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  {info.pic4?
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={info.pic4}
+      alt="Third slide"
+    />
+   
+
+    
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>:''
+  }
+</Carousel>
   <div className="modal-footer">
     <h3>Modal Footer</h3>
   </div>
 </div>
-
+ )}
+ 
 </div>
 
   
@@ -164,13 +244,13 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
 
 			<div className="col-lg-4 col-sm-6">
          <div className="middle">
-         <button onClick={openUp}className="text">John Doe</button>
+         <button id='1'onClick={openUp}className="text">Learn More</button>
   </div>
   
   
   
 				<div className="thumbnail one">
-					<img className='pic'src={require('../imgs/endangered.png')}/>
+					<img alt='pic' className='pic'src={require('../imgs/endangered.png')}/>
       
 				</div>
             
@@ -178,27 +258,28 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
 			<div className="col-lg-4 col-sm-6">
         
          <div className="middle">
-         <button onClick={openUp}className="text">John Doe</button>
+         <button id='3' onClick={openUp}className="text">Learn More</button>
   </div>
 				<div className="thumbnail two">
-            <img className='pic' src={require('../imgs/cupcakes.png')}/>
+            <img alt='pic' className='pic' src={require('../imgs/cupcakes.png')}/>
 				</div>
 			</div>
          <div className="w-100"></div>
-			<div className="col-lg-4 col-sm-6">
+
+			<div  className="col-lg-4 col-sm-6">
          <div className="middle">
-         <button onClick={openUp}className="text">John Doe</button>
+         <button id='2'onClick={openUp}className="text">Learn More</button>
   </div>
 				<div className="thumbnail three">
-            <img className='pic' src={require('../imgs/illucid.png')}/>
+            <img alt='pic' className='pic' src={require('../imgs/illucid.png')}/>
 				</div>
 			</div>
 			<div className="col-lg-4 col-sm-6">
          <div className="middle">
-         <button onClick={openUp}className="text">John Doe</button>
+         <button id='4'onClick={openUp}className="text">Learn More</button>
   </div>
 				<div className="thumbnail four">
-            <img className='pic' src={require('../imgs/travel.png')}/>
+            <img alt='pic' className='pic' src={require('../imgs/travel.png')}/>
 				</div>
 			</div>
 		</div>
@@ -207,7 +288,41 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
 </section>
 <section id='contact' className="section">
 	<h2 className="title3">Contact</h2><br></br>
-   <form className="test-mailing">
+   <form>
+  <div className="form-group">
+    <label htmlFor="exampleFormControlInput1">Name</label>
+    <input 
+     onChange={this.handleChange}
+     value={this.state.name}
+    type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+  </div>
+  <div className="form-group">
+    <label htmlFor="exampleFormControlInput2">Email address</label>
+    <input 
+    onChange={this.handleChange}
+    value={this.state.email}
+    type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+  </div>
+ 
+
+  <div className="form-group">
+    <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+    <textarea
+     className="form-control"
+      id="exampleFormControlTextarea1"
+       rows="3"
+       onChange={this.handleChange}
+       value={this.state.feedback}
+
+       ></textarea>
+  </div>
+  <input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
+
+</form>
+{/*  */}
+
+
+   {/* <form className="test-mailing">
     	<div>
       	<textarea
         	id="test-mailing"
@@ -220,7 +335,7 @@ This is my way to express creativity. Thinking of an idea drawing it out and the
       	/>
     	</div>
     	<input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
-  	</form>
+  	</form> */}
 </section>
 </>
     )

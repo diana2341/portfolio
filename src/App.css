@@ -89,6 +89,7 @@ body {
 .thumbnail{
   transition: .5s ease;
   backface-visibility: hidden;
+  /* width: 120%; */
 }
 .middle {
   transition: .5s ease;
@@ -104,6 +105,10 @@ body {
 
 .col-lg-4:hover .pic {
   opacity: 0.3;
+}
+.pic,.thumbnail{
+  background-color: transparent;
+  border: transparent;
 }
 
 .col-lg-4:hover .middle {
@@ -307,11 +312,12 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+.carousel-indicators li { visibility: hidden; }
 
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: green;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -329,7 +335,29 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
-
+.carousel {
+  width:50%;
+  height:auto;
+}
+.name-p{
+  position: relative;
+  left: 60%;
+}
+.description{
+  position: relative;
+  left: 60%;
+  width:40%
+}
+#iframe{
+  position: relative;
+  top:-10vh
+}
+#frame{
+}
+.tools{
+position: relative;
+left: 60%;
+}
 .close:hover,
 .close:focus {
   color: #000;
@@ -389,11 +417,15 @@ body {
     padding: 1px 16px;
     text-decoration: none;
     font-size: 17px;
-    top: 3em;
+    top: -1em;
+    left: -3%;
   }
   
   .sidenav a:hover {
     background: #ddd;
     color: black;
+  }
+  .job{
+    display: none;
   }
 }
