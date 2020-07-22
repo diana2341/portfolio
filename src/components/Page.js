@@ -6,22 +6,69 @@ export default class Page extends Component{
       super(props);
       this.state = { 
          feedback: '',
-         name: 'Name', 
-         email: 'email@example.com' ,
+         name: '', 
+         email: '' ,
          project:[]
          
    };
 
      }
-    
+     componentDidMount=()=>{
+              let options = {
+                  // threshold:1
+                  //  rootMargin: "-150px"
+              
+              }
+              let sections=document.querySelectorAll('.box1')
+              let observer=  new IntersectionObserver(function(entries, observer){
+                  entries.forEach(entry=>{
+                      if(!entry.isIntersecting){
+                          return
+                      }
+                      // console.log(entry.target);
+                      entry.target.classList.toggle("lis");
+                      observer.unobserve(entry.target)
+      
+                  })
+              },options)
+          
+              sections.forEach(section=>{
+                  observer.observe(section)
+              })
+
+
+
+      // 
+          let sections2=document.querySelectorAll('.box2')
+              let observer2=  new IntersectionObserver(function(entries, observer2){
+                  entries.forEach(entry=>{
+                      if(!entry.isIntersecting){
+                          return
+                      }
+                      // console.log(entry.target);
+                      entry.target.classList.toggle("another");
+                      observer2.unobserve(entry.target)
+      
+                  })
+              },options)
+          
+              sections2.forEach(section=>{
+                  observer2.observe(section)
+              })
+   }
      
      handleSubmit= (event)=>{
       const templateId = "template_OSnwlhmv";;
-   
+      this.setState({name:'',feedback:'',email:''})
       this.sendFeedback(templateId, {message_html: this.state.feedback, from_name: this.state.name, reply_to: this.state.email})
      }
      handleChange=(event) =>{
-      this.setState({feedback: event.target.value})
+      
+      const{name,value}=event.target
+      this.setState({[name]:value})
+      
+
+
     }
      sendFeedback= (templateId, variables) =>{
       window.emailjs.send(
@@ -111,7 +158,12 @@ render(){
 </section>
 {/* ////////////////// */}
 <section id='about' className="section">
-
+<p className='my-info'>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia 
+animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
 
 
 </section>
@@ -274,43 +326,46 @@ render(){
    <div className="row flex">
 
 			<div className="col-lg-4 col-sm-6">
-         <div className="middle">
+         
+  
+  
+  
+				<div className="thumbnail lis  one box1">
+					<img alt='pic' className='pic 'src={require('../imgs/endangered.png')}/>
+      <div className="middle">
          <button id='1'onClick={openUp}className="text">Learn More</button>
   </div>
-  
-  
-  
-				<div className="thumbnail one">
-					<img alt='pic' className='pic'src={require('../imgs/endangered.png')}/>
-      
 				</div>
             
 			</div>
 			<div className="col-lg-4 col-sm-6">
         
-         <div className="middle">
+         
+				<div className="thumbnail lis  two box1">
+            <img alt='pic' className='pic ' src={require('../imgs/cupcakes.png')}/>
+            <div className="middle">
          <button id='3' onClick={openUp}className="text">Learn More</button>
   </div>
-				<div className="thumbnail two">
-            <img alt='pic' className='pic' src={require('../imgs/cupcakes.png')}/>
 				</div>
 			</div>
          <div className="w-100"></div>
 
 			<div  className="col-lg-4 col-sm-6">
-         <div className="middle">
+         
+				<div className="thumbnail another three box2">
+            <img alt='pic' className='pic ' src={require('../imgs/illucid.png')}/>
+            <div className="middle">
          <button id='2'onClick={openUp}className="text">Learn More</button>
   </div>
-				<div className="thumbnail three">
-            <img alt='pic' className='pic' src={require('../imgs/illucid.png')}/>
 				</div>
 			</div>
 			<div className="col-lg-4 col-sm-6">
-         <div className="middle">
+       
+				<div className="thumbnail another four box2">
+            <img alt='pic' className='pic ' src={require('../imgs/travel.png')}/>
+              <div className="middle">
          <button id='4'onClick={openUp}className="text">Learn More</button>
   </div>
-				<div className="thumbnail four">
-            <img alt='pic' className='pic' src={require('../imgs/travel.png')}/>
 				</div>
 			</div>
 		</div>
@@ -325,20 +380,22 @@ render(){
     <input 
      onChange={this.handleChange}
      value={this.state.name}
-    type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+     name='name'
+    type="name" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
   </div>
   <div className="form-group">
     <label htmlFor="exampleFormControlInput2">Email address</label>
     <input 
     onChange={this.handleChange}
     value={this.state.email}
+    name='email'
     type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
   </div>
  
-
   <div className="form-group">
-    <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+    <label htmlFor="exampleFormControlTextarea1">message</label>
     <textarea
+    name='feedback'
      className="form-control"
       id="exampleFormControlTextarea1"
        rows="3"

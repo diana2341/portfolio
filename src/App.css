@@ -10,11 +10,14 @@
 }
 body {
   color: black;
-  background-color: #D2BAB6;
+  /* background: linear-gradient(141deg, white 0%, grey 51%, rgb(46, 45, 45) 75%); */
+  background: linear-gradient(141deg, white 0%, rgb(100, 99, 99) 51%, rgb(46, 45, 45) 75%);
+
+  
 
 }
 #home{
-  background-color: #D2BAB6;
+  /* background-color: #D2BAB6; */
   color: white;
   width: 100%;
   font-family: 'Gruppo';font-size: 50px;
@@ -115,10 +118,58 @@ body {
   opacity: 1;
 }
 .text {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 2vh;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.btn {
+  border: 1px solid rgb(248, 243, 243);
+  border-radius: 3px;
+  width: 20%;
+  height: auto;
+  display: block;
+
+  background: linear-gradient(to right, rgb(212, 209, 209) 50%, rgb(136, 134, 134) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.box1,.box2{
+  position: relative;
+  transition: left  1.2s ease-in;
+  left: -0%;
+}
+.lis{
+left: -150%;
+}
+.my-info{
+  width: 50%;
+}
+
+.another{
+  /* position: relative; */
+  left: 110%;
+  
+}
+
+
+.btn:hover {
+  background-position: left bottom;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1.6vh;
+  /* line-height: 30px;  */
+  color: black;
+  transition: all .6s ease-out;
+  display: block;
+}
+
+.btn:hover {
+  color: white;  
 }
 
 
@@ -186,15 +237,15 @@ body {
 
 } */
 #about{
-  background-color:white;
+  /* background-color:white; */
   
 
 }
 #contact{
-  background-color:rgb(167, 164, 164)
+  /* background-color:rgb(167, 164, 164) */
 }
 #projects{
-  background-color:rgb(139, 137, 137)
+  /* background-color:rgb(139, 137, 137) */
 }
 .sidenav {
   height: 100%;
@@ -203,7 +254,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #735972;
+  background: linear-gradient(141deg, white 0%, rgb(100, 99, 99) 51%, rgb(46, 45, 45) 75%);
   overflow: hidden;
   padding-top: 11vw;
 }
@@ -304,11 +355,11 @@ body {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  left: 0;
+  left: 20%;
   top: 0;
-  width: 100%; /* Full width */
+  width: 70%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  /* overflow: auto; Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
@@ -322,6 +373,7 @@ body {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  /* border-radius: 10%; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -336,8 +388,9 @@ body {
   font-weight: bold;
 }
 .carousel {
-  width:50%;
+  width:85%;
   height:auto;
+
 }
 .name-p{
   position: relative;
@@ -359,13 +412,13 @@ body {
 }
 #iframe{
   position: relative;
-  top:-10vh
+  top:-27.7vh
 }
 
 .tools{
 position: relative;
 left: 60%;
-bottom: -25vh;
+bottom:-40vh;
 
 }
 .close:hover,
@@ -381,14 +434,40 @@ bottom: -25vh;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 2px 16px; }
 
 .modal-footer {
   padding: 2px 16px;
   background-color: grey;
   color: white;
 }
+form{
+  background-color: rgba(185, 184, 184, 0.877);
+  background: #F9F9F9;
+  background: #C8CACA;
+  background: -webkit-linear-gradient(top left, #C8CACA, #535453);
+  background: -moz-linear-gradient(top left, #C8CACA, #535453);
+  background: linear-gradient(to bottom right, #C8CACA, #535453);
+  width: 50%;
+  height: auto;
+  padding: 10%;
+  border-radius: 10%;
+  box-shadow: -2px 7px 40px 2px rgba(18, 31, 23, 0.753);
 
+
+}
+.title3{
+  position: relative;
+  top: -25%;
+  left: 27%;
+}
+.form-control{
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.11);
+}
+.form-control:focus{
+background-color: rgba(165, 163, 163, 0.185);
+}
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0} 
