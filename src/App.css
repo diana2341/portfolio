@@ -5,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-.App{
 
-}
 body {
   color: black;
   /* background: linear-gradient(141deg, white 0%, grey 51%, rgb(46, 45, 45) 75%); */
@@ -73,42 +71,19 @@ body {
 
 
 }
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row{
-  position: relative;
-  /* overflow-y: scroll; */
-  /* height: 150vh;
-  width: 100%; */
-  left: 20%;
-}
+
 #projects{
-    overflow: scroll;
+    /* overflow: scroll; */
   /* height: 150vh;
   width: 100%; */
-}
-.thumbnail{
-  transition: .5s ease;
-  backface-visibility: hidden;
-  /* width: 120%; */
-}
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
+  height: 200vh;
+  width: 100%;
 }
 
-.col-lg-4:hover .pic {
-  opacity: 0.3;
-}
+
+
+
+
 .pic,.thumbnail{
   background-color: transparent;
   border: transparent;
@@ -126,8 +101,8 @@ body {
 }
 .btn {
   border: 1px solid rgb(248, 243, 243);
-  border-radius: 3px;
-  width: 20%;
+  border-radius: 1vh;
+  width: 8vh;
   height: auto;
   display: block;
 
@@ -146,6 +121,9 @@ left: -150%;
 }
 .my-info{
   width: 50%;
+  position: relative;
+  top: 38%;
+  left: 30%;
 }
 
 .another{
@@ -155,98 +133,11 @@ left: -150%;
 }
 
 
-.btn:hover {
-  background-position: left bottom;
-}
-
-.btn {
-  text-align: center;
-  font-size: 1.6vh;
-  /* line-height: 30px;  */
-  color: black;
-  transition: all .6s ease-out;
-  display: block;
-}
-
-.btn:hover {
-  color: white;  
-}
 
 
-/* .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-} */
-/* .ls{
-  font-family: 'Gruppo';
-  font-size: 2vw;
 
-}
-.rails{
-  max-width: 8vw;
-  max-height: 17vh;
-} */
-/* .ruby{
-  position: relative;
-  top: 4vh;
-}
-.postgres{
-  position: relative;
-  top: 3vh; 
- }
-.react{
-  max-width: 15vw;
-  max-height: 17vh;
-}
-.html{
-  position: relative;
-  max-width: 17vw;
-  max-height: 17.5vh;
-  left:   2vh;
 
-}  */
-/* .label{
-  padding: 0;
-  position: relative;
-  left: 14vh;
-  top: -17vh;
-    display: inline-block;
-
-} */
-/* .tech{
-  position: relative;
-  top: 30vh;
-  left: -6vh;
-  -webkit-box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.75);
-  max-height: 50vh;
-  max-width: 90vw;
-  overflow: scroll;
-  
-
-} */
-#about{
-  /* background-color:white; */
-  
-
-}
-#contact{
-  /* background-color:rgb(167, 164, 164) */
-}
-#projects{
-  /* background-color:rgb(139, 137, 137) */
-}
 .sidenav {
   height: 100%;
   width: 16%;
@@ -321,8 +212,6 @@ left: -150%;
   top: 1vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  /* padding: 10px; */
-  /* left: -3vh; */
   width: 3.5vh;
 
   
@@ -343,55 +232,18 @@ left: -150%;
   font-size: 1vw;
 
 }
-/* .social:hover{
+
+
+.d-block {
   position: relative;
-  width: 5vh;
-
-} */
-/* modal */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 20%;
-  top: 0;
-  width: 70%; /* Full width */
-  height: 100%; /* Full height */
-  /* overflow: auto; Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-.carousel-indicators li { visibility: hidden; }
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: white;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  /* border-radius: 10%; */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.carousel {
-  width:85%;
-  height:auto;
+  max-width:85%;
+  max-height:85%;
+  /* bottom: 30vh; */
 
 }
+
+
+
 .name-p{
   position: relative;
   left: 60%;
@@ -410,10 +262,7 @@ left: -150%;
   /* width:40%; */
   bottom: -29vh; 
 }
-#iframe{
-  position: relative;
-  top:-27.7vh
-}
+
 
 .tools{
 position: relative;
@@ -421,26 +270,8 @@ left: 60%;
 bottom:-40vh;
 
 }
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: grey;
-  color: white;
-}
 
-.modal-body {padding: 2px 16px; }
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: grey;
-  color: white;
-}
 form{
   background-color: rgba(185, 184, 184, 0.877);
   background: #F9F9F9;
@@ -482,6 +313,85 @@ background-color: rgba(165, 163, 163, 0.185);
   to {top:0; opacity:1}
 }
 
+
+
+.info-box{
+  /* background-color: rgba(185, 184, 184, 0.877); */
+  
+  /* display: grid;
+position: relative;  */
+  /* border-radius: 10px; */
+/* position: absolute; */
+  box-shadow: -2px 7px 40px 2px rgba(18, 31, 23, 0.753);
+  left: 109%;
+  top: 20%;
+border-radius: 20px;
+position: absolute;
+width: 150%;
+
+}
+#meee{
+  position: relative;
+  left: -20%;
+  width: 40%;
+  /* position: relative; */
+  top: 20%;
+}
+#arms{
+  transform: rotate(-10deg);
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: wave 1.5s  infinite linear;
+}
+@keyframes wave{
+  0%{
+    transform:rotate(-20)
+  }
+  20%{
+    transform:rotate(-10)
+  }
+  40%{
+    transform:rotate(-5)
+  }
+  60%{
+    transform:rotate(0)
+
+  }
+  80%{
+    transform:rotate(-5)
+
+  }
+  100%{
+    transform:rotate(-10)
+
+  }
+}
+.card{
+background-color: rgba(0, 0, 0, 0.144);
+box-shadow: 10px 12px 21px -6px rgba(0,0,0,0.75);
+border: transparent;
+border-radius: 10px;
+}
+.column{
+  position: relative;
+  left: 3%;
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: 70%;
+  top: -1%;
+  grid-row-gap: 50px;
+
+}
+.list{
+  background-color: rgba(0, 0, 0, 0.144);
+  
+  }
+
+
+
+
+
+/* phoneeeeeeeeeeeeeeeeeeeeeee */
 @media only screen and (max-width: 600px) {
  
   /* #me{

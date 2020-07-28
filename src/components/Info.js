@@ -19,11 +19,20 @@ import cake5 from '../imgs/cake5.png'
 import cake6 from '../imgs/cake6.png'
 import cake7 from '../imgs/cake7.png'
 import cake8 from '../imgs/cake8.png'
+import endangered from '../imgs/endangered.png'
+import illucid from '../imgs/illucid.png'
+import cupcake from '../imgs/cupcakes.png'
+import travel from '../imgs/travel.png'
+
+
 
 
 const info = [
     {
       id:1,
+      main:endangered,
+
+      class:'endangered',
       name: 'Endangered Lives',
       tools:'React.js, Ruby Rails API, CSS,HTML',
       libraries:'React slide-show-image, React Simple Maps',
@@ -40,6 +49,8 @@ const info = [
     },
     {
         id:2,
+        class:'illucid',
+        main:illucid,
         name: 'Illucid Beats',
         tools:'Vanilla Javascript, CSS, HTML, Ruby Rails API',
         video:"https://www.youtube.com/embed/pOq3eoo0Mjs",
@@ -50,6 +61,9 @@ const info = [
     },
     {
         id:3,
+        class:'sugar',
+        main:cupcake,
+
         name: 'Sugar Lips',
         tools:'React.js, Ruby Rails API, CSS,HTML',
         video:"https://www.youtube.com/embed/J1_E9mqnAM8",
@@ -66,6 +80,9 @@ const info = [
     },
     {
         id:4,
+        class:'travel',
+        main:travel,
+
         name: 'Travel Rails',
         tools:'Ruby Rails, CSS,HTML,Bulma.io',
         video:"https://streamable.com/e/ai4u1c",
