@@ -129,15 +129,45 @@ render(){
           
 
         </div>
-]        <section id='home'className="section">
-            <div className="box">
-               <h2 className="title">Hi, My name is Diana Ponce</h2>
+        <section id='home'className="section">
+
+        <svg data-aos="fade-right"className='left' id='code ' width="920" height="621" viewBox="0 0 920 621" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="braces 1" clip-path="url(#clip0)">
+<path id="right" d="M404.3 568.7C404.7 568.3 405 561.8 405 554.3V540.6L385.7 539.9C341.5 538.2 330.6 532.6 323.8 507.7C321.8 500.1 321.6 497.1 321 435.3C320.2 365.3 319.8 359.7 314.3 343.1C309.1 327.4 299.6 317.1 282.5 308.8C277.5 306.4 269.8 303.3 265.3 302C260.7 300.7 256.8 299.4 256.4 299.1C256.1 298.8 258.5 297.7 261.7 296.8C264.9 295.9 271.3 293.5 276 291.6C298.6 282 310.9 268.9 316 248.8C319.9 233.7 320.2 227.6 320.9 162.3C321.6 101.1 321.8 97.4 323.8 90.1C328.7 72.1 334.8 65.9 352.3 61C358.2 59.4 363.7 59 382.2 58.6L405 58.1V43V28L382.2 28.6C303.7 30.9 280.9 44.9 271.3 96.8C270.2 103 269.6 118.9 269 166.8C268.3 225.2 268.1 229.4 266.1 238.7C263.4 250.7 258.7 261.3 253.4 267C242.6 278.8 223.2 284.3 192.3 284.3H179V298.7V313L197.2 313.6C243.2 314.9 258.5 325.1 266.2 359.8C268.1 368 268.3 374 269 430.8C269.6 478.4 270.2 494.7 271.3 500.8C276.2 527.2 284.7 543 299.3 552.4C310.6 559.7 330.3 565.1 353.6 567.2C368.7 568.6 403.4 569.6 404.3 568.7Z" fill="#353336" fill-opacity="0.19"/>
+<g id="Group">
+<path id="left" d="M378.5 29.7431C338.7 31.4431 312.6 38.6431 299.3 51.6431C291.3 59.3431 286.8 67.6431 282.5 82.4431C277.5 99.5431 276.8 108.943 276 173.743C275.3 230.643 275.1 234.743 273.2 242.443C265.1 273.743 246 284.743 199.3 284.743H187V299.243V313.743H200.3C246.3 313.743 265.1 324.643 273.2 356.043C275.1 363.743 275.3 367.843 276 424.743C276.8 489.943 277.5 498.743 282.6 516.543C291.4 547.243 308 559.743 348 566.143C359.5 568.043 385.1 569.743 401.3 569.743H413V554.843V539.943L391.3 539.543C367.7 539.043 358.9 537.743 349.5 533.043C340.1 528.443 335.7 522.243 331.8 507.943C329.8 500.643 329.6 496.943 328.9 435.743C328.2 370.143 327.9 364.743 323.9 349.243C318 326.243 302.6 312.043 272.8 302.343L262.6 298.943L268.6 297.343C295.2 289.943 311 279.043 318.9 262.543C327.5 244.443 328.1 238.243 328.9 162.743C329.6 101.543 329.8 97.8431 331.8 90.5431C336.8 72.4431 343.5 65.6431 361.1 61.3431C367.9 59.6431 391.1 57.8431 405.3 57.7431H413.1L412.8 43.4431L412.5 29.2431L404 29.1431C399.3 29.0431 387.9 29.3431 378.5 29.7431Z" fill="#885CA7"/>
+</g>
+</g>
+<defs>
+{/* <clipPath id="clip0">
+<rect width="920" height="621" fill="white"/>
+</clipPath> */}
+</defs>
+</svg>
+  <div className="box">
+           
+
+               <h2  data-aos="flip-down"className="title">
+                  Hi, My name is
+               Diana Ponce
+                 </h2>
+                 <p data-aos="flip-down"className='title'>Full-Stack Developer</p>
             </div>
-	
+            <svg data-aos="fade-left"id='code right'width="920" height="621" viewBox="0 0 920 621" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="braces 1">
+<path id="right" d="M570.7 29.3431C570.3 29.7431 570 36.2431 570 43.7431V57.4431L589.3 58.1431C633.5 59.8431 644.4 65.4431 651.2 90.3431C653.2 97.9431 653.4 100.943 654 162.743C654.8 232.743 655.2 238.343 660.7 254.943C665.9 270.643 675.4 280.943 692.5 289.243C697.5 291.643 705.2 294.743 709.7 296.043C714.3 297.343 718.2 298.643 718.6 298.943C718.9 299.243 716.5 300.343 713.3 301.243C710.1 302.143 703.7 304.543 699 306.443C676.4 316.043 664.1 329.143 659 349.243C655.1 364.343 654.8 370.443 654.1 435.743C653.4 496.943 653.2 500.643 651.2 507.943C646.3 525.943 640.2 532.143 622.7 537.043C616.8 538.643 611.3 539.043 592.8 539.443L570 539.943V555.043V570.043L592.8 569.443C671.3 567.143 694.1 553.143 703.7 501.243C704.8 495.043 705.4 479.143 706 431.243C706.7 372.843 706.9 368.643 708.9 359.343C711.6 347.343 716.3 336.743 721.6 331.043C732.4 319.243 751.8 313.743 782.7 313.743H796V299.343V285.043L777.8 284.443C731.8 283.143 716.5 272.943 708.8 238.243C706.9 230.043 706.7 224.043 706 167.243C705.4 119.643 704.8 103.343 703.7 97.2431C698.8 70.8431 690.3 55.0431 675.7 45.6431C664.4 38.3431 644.7 32.9431 621.4 30.8431C606.3 29.4431 571.6 28.4431 570.7 29.3431Z" fill="#353336" fill-opacity="0.19"/>
+<g id="Group">
+<path id="right_2" d="M561.7 29.3431C561.3 29.7431 561 36.2431 561 43.7431V57.4431L580.3 58.1431C624.5 59.8431 635.4 65.4431 642.2 90.3431C644.2 97.9431 644.4 100.943 645 162.743C645.8 232.743 646.2 238.343 651.7 254.943C656.9 270.643 666.4 280.943 683.5 289.243C688.5 291.643 696.2 294.743 700.7 296.043C705.3 297.343 709.2 298.643 709.6 298.943C709.9 299.243 707.5 300.343 704.3 301.243C701.1 302.143 694.7 304.543 690 306.443C667.4 316.043 655.1 329.143 650 349.243C646.1 364.343 645.8 370.443 645.1 435.743C644.4 496.943 644.2 500.643 642.2 507.943C637.3 525.943 631.2 532.143 613.7 537.043C607.8 538.643 602.3 539.043 583.8 539.443L561 539.943V555.043V570.043L583.8 569.443C662.3 567.143 685.1 553.143 694.7 501.243C695.8 495.043 696.4 479.143 697 431.243C697.7 372.843 697.9 368.643 699.9 359.343C702.6 347.343 707.3 336.743 712.6 331.043C723.4 319.243 742.8 313.743 773.7 313.743H787V299.343V285.043L768.8 284.443C722.8 283.143 707.5 272.943 699.8 238.243C697.9 230.043 697.7 224.043 697 167.243C696.4 119.643 695.8 103.343 694.7 97.2431C689.8 70.8431 681.3 55.0431 666.7 45.6431C655.4 38.3431 635.7 32.9431 612.4 30.8431C597.3 29.4431 562.6 28.4431 561.7 29.3431Z" fill="#885CA7"/>
+</g>
+</g>
+</svg>
+          
+	                 <button  data-aos="fade-right"  className=' secondary'>Resume</button>
+
 </section>
 {/* ////////////////// */}
 <section id='about' className="section">
- <div className='allstacks'>
+ <div  data-aos='fade-up'className='allstacks'>
 <h1>My Skills</h1>
 <ul >
 <li>JavaScript</li>
@@ -145,21 +175,26 @@ render(){
 <li>HTML</li>
 <li>CSS</li>
 <li>React</li>
-<li>React Hooks</li>
-<li>Ruby on Rails</li>
 <li>JSON</li>
-<li>RESTful APIs</li>
+
 <li>SQL</li>
 <li>PostgreSQL</li>
 <li>Bootstrap</li>
 <li>Git</li>
 <li>Algorithms</li>
 <li>Data Structures</li>
+<li>RESTful APIs</li>
+<li>Ruby on Rails</li>
+<li>React Hooks</li>
+
+
 </ul>
 </div>
-<p className='my-info'>
-I'm a software engineer based in New York
+<p  data-aos='fade-up'className='my-info'>
+I'm a software engineer based in New York.
 I am passionate about building and creating anything that could make lives a bit more simpler.
+I love coming up with an idea and love bringing those ideas to life with code. Also enjoy learning new technologies, feel free to take a 
+look around and <a href='#contact'>contact</a> me !
 </p>
  
  {/* <div  className='thought bubble1'><span>CSS</span></div>
@@ -167,7 +202,7 @@ I am passionate about building and creating anything that could make lives a bit
 <div className='thought bubble3'><span>ReactJS</span></div>
 <div className='thought bubble4'><span>Ruby</span></div>
 <div className='thought bubble5'><span>HTML</span></div> */}
-<svg id="meee"width="1390" height="1172" viewBox="0 0 1390 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg  data-aos='fade-up'id="meee"width="1390" height="1172" viewBox="0 0 1390 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_visualization_c2ps 1" clipPath="url(#clip0)" filter="url(#filter0_d)">
 <g >
 <path id="Vector" d="M677.15 250.749C677.15 250.749 604.33 230.23 582.792 329.748C561.253 429.266 577.664 479.538 577.664 479.538L740.227 460.558C740.227 460.558 786.381 281.015 677.15 250.749Z" fill="#5A372A"/>
@@ -281,11 +316,7 @@ I am passionate about building and creating anything that could make lives a bit
 </section>
 <section id='contact' className="section">
    <form data-aos="zoom-in" onSubmit={this.handleSubmit}>
-      <div className='envWrapper'>
-         <div className='mail'></div>
-         <div className='cover'></div>
-         <div className='letter'></div>
-      </div>
+   {/* envolope */}
 	<h2 className="title3">Contact</h2><br></br>
   <div className="form-group">
     {/* <label htmlFor="exampleFormControlInput1">Name</label> */}
