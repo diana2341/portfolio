@@ -20,11 +20,11 @@ html{
 body {
   color: white;
   /* background: linear-gradient(141deg, white 0%, grey 51%, rgb(46, 45, 45) 75%); */
-  background: #bc96d7;
+  background: #358597;
   
  
-
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/60-lines.png"); */
 
 }
 #home{
@@ -63,7 +63,7 @@ body {
   position: relative;
   /* z-index: 9; */
   left:5%;
-  top:20%;
+  top:-3em;
   /* max-width: 50%; */
   font-size: 5vw;
   /* font-family: 'Gruppo';font-size: 50px; */
@@ -92,7 +92,7 @@ body {
     /* overflow: scroll; */
   /* height: 150vh;
   width: 100%; */
-  height: 200vh;
+  height: 210vh;
   width: 100%;
 }
 
@@ -142,10 +142,10 @@ body {
 left: -150%;
 }
 .my-info{
-  width: 62%;
+  width: 30%;
   position: relative;
   top: -18%;
-  left: 40%;
+  left: 1%;
   z-index: 1;
   font-weight: 600;
 
@@ -172,7 +172,7 @@ left: -150%;
   z-index: 1;
   top: 0;
   left: 0;
-  background: #bc96d7;
+  background: #2e7585;
   overflow: hidden;
   padding-top: 11vw;
 }
@@ -190,7 +190,7 @@ left: -150%;
 }
 
 .sidenav a:hover {
-  color: #8c36dd;;
+  color: rgb(8, 61, 8);;
 }
 
 .open,.closebtn{
@@ -237,19 +237,20 @@ left: -150%;
 .secondary{
   border: 1px solid rgb(248, 243, 243);
   border-radius: 1vh;
+  border-bottom: solid rgba(255, 255, 255, 0.575);
   width: 15vh;
   height: auto;
   display: block;
-
-  background: linear-gradient(19deg, rgba(218,206,226,1) 0%, rgba(181,128,218,1) 100%);
+  padding: 0.2%;
+  background:#3a93a7;
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
   font-family: 'Gruppo';
   font-size: 3vh;
   position: relative;
-  left: -40%;
-  top: 20%;
+  left: 34%;
+  top: -7em;
 
 }
 .secondary:hover{
@@ -278,7 +279,7 @@ left: -150%;
 .job{
   position: relative;
   border:  solid transparent;
-  background-color: #d9bcee;
+  background-color: #358597;
   border-radius: 15px;
   max-width: 65%;
   height: auto;
@@ -289,7 +290,9 @@ left: -150%;
   font-size: 1.1vw;
 
 }
-
+.con{
+  color: blue;
+}
 
 .d-block {
   position: relative;
@@ -437,7 +440,7 @@ left: 1%;
   position: relative;
   left: 75%;
  top: -10%;
-  color: #8c36dd;
+  color: #358597;
   margin-bottom: -15px;
 }
 .form-control{
@@ -458,7 +461,7 @@ background-color: rgba(165, 163, 163, 0.185);
 }
 .btn{
   color: white;
-  background: #8c36dd;
+  background: #358597;
   width: 30%;
   height: 35px;
   position: relative;
@@ -497,17 +500,23 @@ width: 150%;
 
 }
 #meee{
-  position: relative;
+  position: absolute;
   right:35% ;
-  width: 145%;
+  width: 55%;
   /* position: relative; */
-  top: -10%;
+  top: 70%;
 }
 #arms{
   transform: rotate(-10deg);
   transform-origin: center;
   transform-box: fill-box;
   animation: wave 1.5s  infinite linear;
+}
+#env{
+  position: absolute;
+  width: 49%;
+  top: -30%;
+  left: 1%;
 }
 
 @keyframes hi{
@@ -548,13 +557,12 @@ width: 150%;
 
 .allstacks{
   position: relative;
-  left: 30%;
+  left: 25%;
   font-size: 15px;
   z-index: 999;
   font-family: 'Gruppo';font-size: 20px;
 font-weight: 600;
 top:30%;
-
 }
 .title2{
   position: relative;
@@ -567,39 +575,67 @@ top:30%;
 
 }
 .allstacks ul li{
-  margin-right: 50px;
+  margin-right: 40px;
 
 }
 .allstacks h1{
   position: relative;
   text-decoration: underline;
   font-weight: 600;
-left: 25%;
+left: 35%;
 top: -30px;
 
 }
 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+
 }
 .card{
-background-color: rgba(0, 0, 0, 0.144);
-box-shadow: 10px 12px 21px -6px rgba(0,0,0,0.75);
+background-color: transparent;
+/* box-shadow: 10px 12px 21px -6px rgba(0,0,0,0.75); */
 border: transparent;
 border-radius: 10px;
+width: 50%;
+top: 30%;
+}
+.body{
+  position: absolute;
+  left: 130%;
+  width:80% ;
+  font-family: 'Gruppo';
+  font-size: 12px;
+
+}
+.white{
+  border: solid #2e7585;
+  width: 80%;
+  height: 80%;
+}
+.desk{
+  position: relative;
+  width: 75%;
+  height: 71%;
+  /* height: 100vh; */
+  left: 25.1%;
+  bottom: 1%;
+}
+.picturep{
+  border-radius: 2%;
 }
 .column{
   position: relative;
   left: 3%;
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto  ;
   width: 70%;
   top: -1%;
   grid-row-gap: 50px;
 
 }
 .list{
-  background-color: rgba(0, 0, 0, 0.144);
+  background-color: transparent;
+  border: transparent;
   
   }
 
