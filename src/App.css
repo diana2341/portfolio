@@ -251,6 +251,8 @@ left: -150%;
   position: relative;
   left: 34%;
   top: -7em;
+  z-index: 999;
+ cursor: pointer; ;
 
 }
 .secondary:hover{
@@ -682,4 +684,27 @@ top: 30%;
   .job{
     display: none;
   }
+  form{
+width: 80%;
+height: 50%;
+  }
+  #env{
+    top: -100%;
+  }
+  .form-control{
+    width: 63%;
+    top: -2px;
+    height: 60%;
+  }
+ .btn{
+   
+   left: 1%;
+   top: -50%;
+ }
+
+.title3{
+  left: 63%;
+}
+
+  
 }
