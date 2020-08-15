@@ -42,7 +42,7 @@ body {
   bottom: 0;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 700px;
   width: 100%;
   /* z-index: -1; */
   overflow: hidden;
@@ -142,14 +142,15 @@ body {
 left: -150%;
 }
 .my-info{
-  width: 30%;
+  width: 180%;
   position: relative;
   top: -18%;
-  left: 1%;
+  left: 24%;
   z-index: 1;
   font-weight: 600;
 
   font-family: 'Gruppo';font-size: 20px;
+  z-index: 999;
 
 }
 
@@ -251,13 +252,20 @@ left: -150%;
   position: relative;
   left: 34%;
   top: -7em;
+  
   z-index: 999;
  cursor: pointer; ;
+ outline:none;
 
 }
 .secondary:hover{
-  background: white;
+  /* background: white; */
   color: #333;
+}
+
+.secondary:focus{
+  border: none;
+
 }
 .box{
   position: relative;
@@ -502,12 +510,14 @@ width: 150%;
 
 }
 #meee{
-  position: absolute;
-  right:35% ;
-  width: 55%;
+  position: relative;
+  right:38% ;
+  width: 335%;
   /* position: relative; */
-  top: 70%;
+  top: -7%;
+  z-index: -999;
 }
+
 #arms{
   transform: rotate(-10deg);
   transform-origin: center;
@@ -602,11 +612,13 @@ width: 50%;
 top: 30%;
 }
 .body{
-  position: absolute;
+  position: relative;
   left: 130%;
   width:80% ;
   font-family: 'Gruppo';
-  font-size: 12px;
+  font-size: 15px;
+  top: -53%;
+  
 
 }
 .white{
@@ -629,10 +641,9 @@ top: 30%;
   position: relative;
   left: 3%;
   display: grid;
-  grid-template-columns: auto  ;
+  /* grid-template-columns: auto  ; */
   width: 70%;
-  top: -1%;
-  grid-row-gap: 50px;
+  /* top: -1%; */
 
 }
 .list{

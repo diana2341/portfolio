@@ -92,7 +92,11 @@ export default class Page extends Component{
         .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
      }
    
-  
+     onResumeClick() {
+      window.open(Pdf);
+    }
+    
+    
    
 render(){
 
@@ -152,8 +156,10 @@ render(){
                Diana Ponce
                  </h2>
                  <p data-aos="flip-down"className='title'>Full-Stack Developer</p>
-                 <a data-aos='zoom-in'className=' secondary' href = {Pdf} target = "_blank">resume</a>
-
+                 {/* <a href = {Pdf} >resume</a> */}
+                 <button data-aos='zoom-in'className=' secondary' onClick={this.onResumeClick}>
+      Resume
+   </button>
             </div>
             {/* <svg data-aos="fade-left"id='code right'width="920" height="621" viewBox="0 0 920 621" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="braces 1">
