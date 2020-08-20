@@ -279,16 +279,16 @@ look around and <a className='con' href='#contact'>contact</a> me !
 <section id='projects' className="section">
 	<h2 className="title2">Projects</h2>
    
-
+<div className='presentation'>
 <CardDeck className='column'  >
     {this.state.project.map((info,index)=> 
 
 
       <Card key={index}className='card' >
-
-      <Card.Img data-aos="fade-right"className='picturep'variant="top"  alt='pic' src={info.main} />
-   
-      <Card.Body data-aos="fade-left"className='body'>
+{/* data-aos="fade-right" */}
+      <Card.Img className='picturep'variant="top"  alt='pic' src={info.main} />
+   {/* data-aos="fade-left" */}
+      <Card.Body className='body'>
  <div >
  <Card.Title><h2>{info.name}</h2></Card.Title>
  <Card.Text>{info.description}</Card.Text>
@@ -309,7 +309,7 @@ look around and <a className='con' href='#contact'>contact</a> me !
 )}
 </CardDeck>
 
-
+</div>
 
 
 </section>
