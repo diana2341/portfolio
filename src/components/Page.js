@@ -170,6 +170,7 @@ render(){
 </g>
 </svg>
            */}
+                   <img alt='pic' className="phone-me" src={require('../imgs/me2.JPG')}/> 
 
                     </div> 
 </section>

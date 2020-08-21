@@ -653,8 +653,7 @@ top: 30%;
   }
 
 .phone-me{
-  display: none
-}
+visibility: hidden;}
 
 
 
@@ -734,8 +733,14 @@ height: 50%;
   width: 100%;
   height: 80%;
 }
-  .me{
-
+  .phone-me{
+    position: relative;
+    bottom:30vh;
+    left: 40%;
+    max-width: 45vw;
+    height: auto;
+    border-radius: 50%;
+    visibility: visible;
   }
   .secondary{
     position: relative;
@@ -746,5 +751,8 @@ height: 50%;
     position: relative;
     left: -10%;
     font-size: 25px
+  }
+  .phone-me{
+
   }
 }
