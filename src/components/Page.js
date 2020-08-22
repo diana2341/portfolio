@@ -170,9 +170,10 @@ render(){
 </g>
 </svg>
            */}
-                   <img alt='pic' className="phone-me" src={require('../imgs/me2.JPG')}/> 
 
                     </div> 
+                                       <img alt='pic' className="phone-me" src={require('../imgs/me2.JPG')}/> 
+
 </section>
 {/* ////////////////// */}
 <section id='about' className="section">
