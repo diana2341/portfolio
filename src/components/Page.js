@@ -522,9 +522,9 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
       <Card key={index}className='card' >
 {/* data-aos="fade-right" */}
-      <Card.Img data-aos-offset="0"data-aos="fade-right" className='picturep'variant="top"  alt='pic' src={info.main} />
+      <Card.Img  className='picturep'variant="top"  alt='pic' src={info.main} />
    {/* data-aos="fade-left" */}
-      <Card.Body data-aos-offset="0"data-aos="fade-left"className='body'>
+      <Card.Body className='body'>
  <div >
  <Card.Title><h2>{info.name}</h2></Card.Title>
  <Card.Text>{info.description}</Card.Text>
@@ -534,9 +534,9 @@ look around and <a className='con' href='#contact'>contact</a> me !
  
  </div>
  <div className='external-l'>
- <AiFillGithub size={20}/>
- <RiYoutubeLine size={20}/>
- <HiExternalLink size={20}/> 
+ <a href={info.gitLink}><AiFillGithub size={20}/></a>
+ <a href={info.youtube}><RiYoutubeLine size={20}/></a>
+ { info.deploy?<a href={info.deploy}><HiExternalLink size={20}/></a>:''}
  </div>
       </Card.Body>
 

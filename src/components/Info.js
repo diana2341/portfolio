@@ -44,7 +44,10 @@ const info = [
 
 
 
-      description:"An educational site  that raises awareness about several animal species endangered due to poaching. Reasons for poaching are explained to the user. They can also view recent news about the animal and are able to join a community to discuss  the topic with others."
+      description:"An educational site  that raises awareness about several animal species endangered due to poaching. Reasons for poaching are explained to the user. They can also view recent news about the animal and are able to join a community to discuss  the topic with others.",
+      gitLink:'https://github.com/diana2341/why-poaching-front',
+      youtube:'https://www.youtube.com/watch?v=xTjHOjz2xGA&t=13s',
+      deploy:'https://endangered-lives.herokuapp.com/'
       
     },
     {
@@ -57,7 +60,10 @@ const info = [
         pic1:sound1,
         pic2:sound2,
         pic3:sound3,
-        description:'A sound machine used to reduce stress, increase concentration or enable the ability to sleep better with ambient noises. Users can make a mix of ambient noises and listen to others creations.'
+        description:'A sound machine used to reduce stress, increase concentration or enable the ability to sleep better with ambient noises. Users can make a mix of ambient noises and listen to others creations.',
+        gitLink:'https://github.com/diana2341/illucid-beats-front',
+        youtube:'https://www.youtube.com/watch?v=pOq3eoo0Mjs',
+        deploy:'https://illucid--beats.herokuapp.com/'
     },
     {
         id:3,
@@ -75,8 +81,10 @@ const info = [
         pic6:cake6,
         pic7:cake7,
         pic8:cake8,
-        description:'An ecommerce site for a bakery that sells cupcakes, where  users can order any amount of these treats to be delivered to their homes!'
-
+        description:'An ecommerce site for a bakery that sells cupcakes, where  users can order any amount of these treats to be delivered to their homes!',
+        gitLink:'https://github.com/diana2341/mod4-sugarlips_cupcakes-client',
+        youtube:'https://www.youtube.com/watch?v=J1_E9mqnAM8&t=2s',
+        // deploy:'https://illucid--beats.herokuapp.com/'
     },
     {
         id:4,
@@ -92,7 +100,9 @@ const info = [
         pic4:home4,
         pic5:home5,
         pic6:home6,
-        description:'A site for hosting homes as stays for people on vacation and where homes, apartments, or rooms can be booked by people traveling. Users can become hosts and post their homes or find a home.'
+        description:'A site for hosting homes as stays for people on vacation and where homes, apartments, or rooms can be booked by people traveling. Users can become hosts and post their homes or find a home.',
+        gitLink:'https://github.com/diana2341/My_Travel_rails',
+        youtube:'https://streamable.com/ai4u1c',
     }
   ];
   
