@@ -840,6 +840,7 @@ height: 50%;
     left: 60px;
     width: 40%;
     height: 50px;
+    z-index: -999;
   }
   .intro{
     position: relative;
@@ -901,8 +902,32 @@ height: 50%;
     font-family: 'Gruppo';
     font-weight: 600;
   }
- 
-  
+ #descrip{
+   visibility: hidden;
+ }
+  .my-info{
+    left: -240%;
+    top: -70px;
+    /* width: 150px; */
 
+    /* visibility: hidden; */
+  }
+  .para{
+width: 160px; 
+/* left: 55%;
+top: -17%; */
+z-index: -999;
+ }
+ #meee{
+   top: -22%;
+   width: 40%;
+   left: -45%;
+
+ }
+ .allstacks{
+   left: 17%;
+   z-index: -999;
+   top: 40%;
+ }
  
 }

@@ -500,12 +500,14 @@ render(){
 
 </div>
 </div>
+<div className='para'>
 <p  data-aos='fade-up'className='my-info'>
 I'm a software engineer based in New York.
 I am passionate about building and creating anything that could make lives a bit more simpler.
 I love coming up with an idea and love bringing those ideas to life with code. Also enjoy learning new technologies, feel free to take a 
 look around and <a className='con' href='#contact'>contact</a> me !
 </p>
+</div>
 {/* <img alt='pic' id="meee" src={require('../imgs/me2.JPG')}/>  */}
 <img alt='pic' id="meee" src={require('../imgs/uno.jpg')}/> 
 
