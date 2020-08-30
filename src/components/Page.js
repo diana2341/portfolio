@@ -179,26 +179,24 @@ render(){
 <section id='about' className="section">
  <div  data-aos='fade-up'className='allstacks'>
 <h1>My Skills</h1>
-<ul >
-<li>JavaScript</li>
-<li>Ruby</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>React</li>
-<li>JSON</li>
+<div className='ul'>
+<p className='p'>JavaScript</p>
+<p className='p'>Ruby</p>
+<p className='p'>HTML</p>
+<p className='p'>CSS</p>
+<p className='p'>React</p>
+<p className='p'>JSON</p>
 
-<li>SQL</li>
-<li>PostgreSQL</li>
-<li>Bootstrap</li>
-<li>Git</li>
-<li>Algorithms</li>
-<li>Data Structures</li>
-<li>RESTful APIs</li>
-<li>Ruby on Rails</li>
-<li>React Hooks</li>
+<p className='p'>SQL</p>
+<p className='p'>PostgreSQL</p>
+<p className='p'>Bootstrap</p>
+<p className='p'>Git</p>
+<p className='p'>RESTful APIs</p>
+<p className='p'>Ruby on Rails</p>
+<p className='p'>React Hooks</p>
 
 
-</ul>
+</div>
 </div>
 <p  data-aos='fade-up'className='my-info'>
 I'm a software engineer based in New York.
@@ -206,7 +204,7 @@ I am passionate about building and creating anything that could make lives a bit
 I love coming up with an idea and love bringing those ideas to life with code. Also enjoy learning new technologies, feel free to take a 
 look around and <a className='con' href='#contact'>contact</a> me !
 </p>
-<svg id="meee"width="1390" height="1172" viewBox="0 0 1390 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg id="meee"width="1390"  viewBox="0 0 1390 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_visualization_c2ps 1" clipPath="url(#clip0)" filter="url(#filter0_d)">
 <g >
 <path id="Vector" d="M676.11 250.753C676.11 250.753 602.157 230.192 580.283 329.91C558.41 429.627 575.075 480 575.075 480L740.167 460.982C740.167 460.982 787.039 281.079 676.11 250.753Z" fill="#5A372A"/>

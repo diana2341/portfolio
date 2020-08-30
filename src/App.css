@@ -23,7 +23,7 @@ body {
   background: #358597;
   
  
-  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/60-lines.png"); */
 
 }
@@ -36,7 +36,28 @@ body {
 
   /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
 }
+.p{
+  /* border: solid #DCDCDC; */
+  border-radius: 50px;
+  background: #2e7585;
+  text-align: center;
+  width: 145%;
+  margin: 2.5px;
 
+}
+.ul{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  position: relative;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-weight: normal; */
+  font-size: 16px;
+  grid-column-gap: 55px;
+  grid-row-gap: 7px;
+
+
+
+}
 .section {
   align-items: center;
   bottom: 0;
@@ -144,8 +165,8 @@ left: -150%;
 .my-info{
   width: 180%;
   position: relative;
-  top: -18%;
-  left: 24%;
+  top: -8%;
+  left: 44%;
   z-index: 1;
   font-weight: 600;
 
@@ -668,6 +689,7 @@ display: none;}
     .icon,.me{
       display: none;
     }
+    
   .sidenav {
     overflow: hidden;
     background-color: #333;
@@ -687,6 +709,7 @@ display: none;}
     font-size: 17px;
     top: -1em;
     left: -3%;
+
   }
   
   .sidenav a:hover {
@@ -754,6 +777,16 @@ height: 50%;
     position: relative;
     left: -17%;
     font-size: 25px
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    z-index: -999;
+    display: none;
+  
+  }
+  #meee{
+    border: solid white;
   }
  
 }
