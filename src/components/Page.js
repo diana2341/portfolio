@@ -121,8 +121,14 @@ render(){
     return(
         <>
                 <GithubCorner id='git'bannerColor="#2a6977" href='https://github.com/diana2341/portfolio' />
-
-     
+              <div className='nav'>
+                <div className='tags'>
+                <a href='#home'>Home</a>
+               <a href='#about'>About</a>
+               <a href='#projects'>Projects</a>
+                <a href='#contact'>Contact</a>
+                </div>
+              </div>
          <div data-aos="fade-right" id="mySidenav" className='sidenav'>
 
       <div className="box-nav"> 
@@ -137,12 +143,7 @@ render(){
                 <img alt='pic' className='icon contact'src={require('../imgs/contact.png')}/>
       
             </div> 
-               {/* <div className='social'>
-                <a href="https://github.com/diana2341"><img alt='pic' className='icon social'src={require('../imgs/git.png')}/></a>
-                <a href='https://www.instagram.com/diana.poncee/'><img alt='pic' className='icon social'src={require('../imgs/instagram.png')}/></a>
-                <a href='https://medium.com/@dianaponce2341'><img alt='pic' className='icon social'src={require('../imgs/medium.png')}/></a>
-                <a href='https://www.linkedin.com/in/diana-ponce-1718821a2/'><img alt='pic' className='icon social'src={require('../imgs/linkedin.png')}/></a>
-                </div> */}
+          
      
            
           
@@ -465,9 +466,9 @@ render(){
 </svg>
 
 
-                 <p data-aos="fade-right"className='title'>Full-Stack Developer</p>
+                 <p data-aos="fade-right"className='title intro-se'>Full-Stack Developer</p>
                  {/* <a href = {Pdf} >resume</a> */}
-                 <button data-aos='fade-righ'className=' secondary' onClick={this.onResumeClick}>
+                 <button data-aos='fade-righ'className='secondary' onClick={this.onResumeClick}>
       Resume
    </button>
          
@@ -505,7 +506,9 @@ I am passionate about building and creating anything that could make lives a bit
 I love coming up with an idea and love bringing those ideas to life with code. Also enjoy learning new technologies, feel free to take a 
 look around and <a className='con' href='#contact'>contact</a> me !
 </p>
-<img alt='pic' id="meee" src={require('../imgs/me2.JPG')}/> 
+{/* <img alt='pic' id="meee" src={require('../imgs/me2.JPG')}/>  */}
+<img alt='pic' id="meee" src={require('../imgs/uno.jpg')}/> 
+
 
 
 </section>
