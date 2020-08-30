@@ -5,7 +5,18 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Pdf from '../Documents/resume.pdf';
 import GithubCorner from 'react-github-corner';
-import { FaMediumM } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa";
+import { FaLinkedin } from 'react-icons/fa';
+import{FaInstagramSquare} from 'react-icons/fa'
+import {FaGithubSquare} from'react-icons/fa'
+import {HiExternalLink} from'react-icons/hi'
+import {AiFillGithub} from'react-icons/ai'
+import {RiYoutubeLine} from'react-icons/ri'
+import {AiOutlineEllipsis} from'react-icons/ai'
+
+
+
+
 
 
 
@@ -124,7 +135,6 @@ render(){
                  <img alt='pic' className='icon computer'src={require('../imgs/computer.png')}/> 
                 <a href='#contact'>Contact</a>
                 <img alt='pic' className='icon contact'src={require('../imgs/contact.png')}/>
-
       
             </div> 
                {/* <div className='social'>
@@ -502,18 +512,19 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
 {/* /////////////// */}
 <section id='projects' className="section">
-	<h2 className="title2">Projects</h2>
    
 <div className='presentation'>
+  	<h2 className="title2">Projects</h2>
+
 <CardDeck className='column'  >
     {this.state.project.map((info,index)=> 
 
 
       <Card key={index}className='card' >
 {/* data-aos="fade-right" */}
-      <Card.Img className='picturep'variant="top"  alt='pic' src={info.main} />
+      <Card.Img data-aos-offset="0"data-aos="fade-right" className='picturep'variant="top"  alt='pic' src={info.main} />
    {/* data-aos="fade-left" */}
-      <Card.Body className='body'>
+      <Card.Body data-aos-offset="0"data-aos="fade-left"className='body'>
  <div >
  <Card.Title><h2>{info.name}</h2></Card.Title>
  <Card.Text>{info.description}</Card.Text>
@@ -522,8 +533,11 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
  
  </div>
- 
-   
+ <div className='external-l'>
+ <AiFillGithub size={20}/>
+ <RiYoutubeLine size={20}/>
+ <HiExternalLink size={20}/> 
+ </div>
       </Card.Body>
 
 
@@ -631,6 +645,13 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
 </form>
 
+<div data-aos="zoom-in"className='social'>
+<a href='https://medium.com/@dianaponce2341'><FaMedium size={50} /></a>
+<a href='https://www.linkedin.com/in/diana-ponce-1718821a2/'><FaLinkedin size={50}/></a>
+<a href='https://www.instagram.com/diana.poncee/'><FaInstagramSquare size={50}/></a>
+<a href="https://github.com/diana2341"><FaGithubSquare size={50}/></a>
+</div>
+  
 </section>
 </>
     )
