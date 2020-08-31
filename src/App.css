@@ -801,7 +801,7 @@ width: 80%;
 height: 50%;
   }
   #env{
-    top: -100%;
+    top: -70%;
   }
   .form-control{
     width: 63%;
@@ -811,7 +811,7 @@ height: 50%;
  .btn{
    
    left: 1%;
-   top: -50%;
+   top: -15%;
  }
 
 .title3{
@@ -823,12 +823,21 @@ height: 50%;
   display: grid;
   grid-template-columns: auto   ;
   width: 200%;
-  top: 30em;
+  top: 0em;
   row-gap: 5%;
-  overflow: scroll;
+  /* overflow: scroll; */
   
 }
+#projects{
+  margin: 0;
+  height: 340vh;
 
+  
+}
+.presentation{
+  top: -48em;
+
+}
  
   #git{
     display: none;
@@ -929,5 +938,47 @@ z-index: -999;
    z-index: -999;
    top: 40%;
  }
- 
+ .social{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  top: 35%;
+  column-gap: 15px;
+  left: -65%;
+ }
+ .body{
+  position: relative;
+  left: 0%;
+  width:100% ;
+  font-family: 'Gruppo';
+  font-size: 15px;
+  top: 0%;
+  background-color: rgba(180, 175, 175, 0.274);
+  border-radius: 10px;
+  margin-bottom: none;
+  
+
 }
+.card{
+  background-color: transparent;
+  /* box-shadow: 10px 12px 21px -6px rgba(0,0,0,0.75); */
+  border: transparent;
+  border-radius: 10px;
+  width: 44%;
+  top: 10%;
+  left: 4%;
+  }
+  .column{
+    position: relative;
+    left: 0%;
+    display: grid;
+    grid-template-columns: auto   ;
+    width: 200%;
+    top: 0em;
+    row-gap: 20%;
+    
+  }
+  .title2{
+    left: 35%;
+  }
+}
+
