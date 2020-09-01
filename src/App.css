@@ -1494,3 +1494,45 @@ form{
   left: 5%;
 }
 }
+@media only screen and (max-width:768px) {
+.tags{
+  font-size: 36px;
+}
+#projects{
+  height: 290vh;
+
+}
+.presentation{
+  top: -1%;
+
+}
+.title2{
+  position: relative;
+  top: -115px;
+}
+.body{
+  width: 100%;
+  left: 95%;
+}
+.picturep{
+  position: relative;
+  top: -50px;
+}
+.intro{
+  top: -60px;
+}
+.secondary{
+  top:10%
+
+}
+#meee{
+  left: -20%;
+  top: -20%;
+}
+.my-info{
+  top: -160px;
+}
+.allstacks{
+  top: 30%;
+}
+}
