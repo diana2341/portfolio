@@ -79,7 +79,7 @@ a:hover{
   bottom: 0;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 800px;
   width: 100%;
   /* z-index: -1; */
   overflow: hidden;
@@ -193,10 +193,10 @@ a:hover{
 left: -150%;
 }
 .my-info{
-  width: 190%;
+  width: 90%;
   position: relative;
-  top: -8%;
-  left: 10%;
+  top: -35px;
+  left: 15%;
   z-index: 1;
   font-weight: 600;
 
@@ -308,21 +308,19 @@ left: -150%;
 }
 .secondary{
   border: 1px solid rgb(248, 243, 243);
-  border-radius: 1vh;
+  border-radius: 10px;
   border-bottom: solid rgba(255, 255, 255, 0.575);
-  width: 15vh;
+  width: 105px;
   height: auto;
   display: block;
   padding: 0.2%;
   background:#3a93a7;
-  background-size: 200% 100%;
   background-position: right bottom;
-  transition: all .5s ease-out;
   font-family: 'Gruppo';
-  font-size: 3vh;
+  font-size: 26px;
   position: relative;
   left: 2%;
-  top: -29vh;
+  top: -159px;
   
   z-index: 999;
  cursor: pointer; ;
@@ -331,7 +329,8 @@ left: -150%;
 }
 .secondary:hover{
   /* background: white; */
-  color: #333;
+  backGRound-color: white;
+  color: black;
 }
 
 .secondary:focus{
@@ -585,12 +584,12 @@ width: 150%;
 }
 #meee{
   position: relative;
-  right:57% ;
-  width: 25%;
+  right:60% ;
+  width: 18%;
   /* position: relative; */
-  top: 5%;
+  top: 3%;
   z-index: -999;
-  border-radius: 50%;
+  border-radius: 60px;
 }
 #descrip{
   position: relative;
@@ -657,7 +656,7 @@ width: 150%;
 
 .allstacks{
   position: relative;
-  left: 35%;
+  left: 30%;
   font-size: 15px;
   z-index: 999;
   font-family: 'Gruppo';font-size: 20px;
@@ -760,9 +759,78 @@ top: 30%;
 .phone-me{
 display: none;}
 
+.arrow{
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  position: relative;
+  top: -160px;
+left: 550px;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+animation: down 2s linear infinite;
+}
+@keyframes down{
+  0%{
+    top: -130px;
 
+  }
+  100%{
+    top: -90px;
 
+  }
+}
+.e-l{
+  width: 0;
+}
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
+
+
+
+
+@media only screen and (max-width: 976px) {
+  .title{
+    left: 25px;
+
+  }
+  .secondary{
+    position: relative;
+    left: 38%;
+    top: -1px;
+  }
+  .arrow{
+    left: 43%;
+    animation: down 2s linear infinite;
+
+  }
+  @media only screen and (max-width: 976px) {
+    .title{
+      left: 25px;
+  
+    }
+    .secondary{
+      position: relative;
+      left: 38%;
+      top: -1px;
+    }
+    .arrow{
+      left: 43%;
+      animation: down 2s linear infinite;
+  
+    }
+  }
+  @keyframes down{
+    0%{
+      top: 42px;
+  
+    }
+    100%{
+      top: 70px;
+  
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
  
   /* #me{
@@ -838,7 +906,11 @@ height: 50%;
   top: -48em;
 
 }
- 
+.link{
+  display: none;
+  color: #1d4e58;
+}
+
   #git{
     display: none;
   }
@@ -980,5 +1052,82 @@ z-index: -999;
   .title2{
     left: 35%;
   }
+}
+@media only screen and (max-width: 608px) {
+  .title{
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .title{
+    left: 65px;
+  }
+}
+@media only screen and (max-width: 598px) {
+  .title{
+    left: -80px;
+  }
+  .intro{
+    top: 90px;
+    left: -100px;
+  }
+  .secondary{
+    top: 10px;
+  }
+}
+/* motog4 */
+@media only screen and (max-width: 360px) {
+ .box{
+   top: -3%;
+ }
+ #projects{
+   height: 375vh;
+ }
+.title{
+left: -12%;
+font-size: 30px;
+top: 10;
+}
+.intro{
+  top: -2%;
+  left: -50px;
+}
+.intro-se{
+  top: -210px;
+}
+.secondary{
+  top: -20%;
+  font-size: 25px;
+  height: 40px;
+  left: 30px;
+
+}
+.tags{
+  left: 1%;
+}
+.my-info{
+  width: 280%;
+  height: 30%;
+  left: -220%;
+  top: 10%;
+}
+.p{
+font-size: 14px
+}
+.allstacks{
+  top: 35%;
+
+}
+#meee{
+  top: -32%;
+  left: -80%;
+  border-radius: 0;
+}
+
+}
+
+@media only screen and (max-width:1008px) {
+  .arrow{
+display: none;  }
 }
 

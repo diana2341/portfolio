@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import info from './Info';
-import Me from './me';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Pdf from '../Documents/resume.pdf';
@@ -12,7 +11,6 @@ import {FaGithubSquare} from'react-icons/fa'
 import {HiExternalLink} from'react-icons/hi'
 import {AiFillGithub} from'react-icons/ai'
 import {RiYoutubeLine} from'react-icons/ri'
-import {AiOutlineEllipsis} from'react-icons/ai'
 
 
 
@@ -111,7 +109,6 @@ export default class Page extends Component{
     }
     
     
-   
 render(){
 
    
@@ -170,7 +167,7 @@ render(){
                Diana Ponce
                  </h2>
                  <svg data-aos='zoom-in'id="mee"width="1532"  viewBox="0 0 1532 747" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="undraw_visualization_c2ps 1" clip-path="url(#clip0)" filter="url(#filter0_d)">
+<g id="undraw_visualization_c2ps 1" clipPath="url(#clip0)" filter="url(#filter0_d)">
 <g id="undraw_hacker_mind_6y85 1 1">
 <g id="undraw hacker mind 6y85 1">
 <path id="Vector" d="M1037.2 84.6489H1027.19V102.072H1037.2V84.6489Z" fill="#47B0C8"/>
@@ -436,8 +433,8 @@ render(){
 <path id="Vector_18" d="M802.057 526.109C802.057 526.109 828.797 504.862 854.664 457.444L908.931 464.643L893.071 590.061C893.071 590.061 879.949 644.623 855.891 646.182C855.891 646.182 844.955 657.095 827.459 657.095C809.962 657.095 774.969 647.741 774.969 647.741C774.969 647.741 724.666 643.064 709.356 644.623C694.047 646.182 628.435 653.977 691.86 608.768C691.86 608.768 724.666 593.179 720.292 588.502C715.918 583.825 709.356 563.559 709.356 563.559L717.333 475.718L762.187 469.073L802.057 526.109Z" fill="black"/>
 </g>
 <defs>
-<filter id="filter0_d" x="-4.20652" y="0" width="1540.64" height="755.684" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_d" x="-4.20652" y="0" width="1540.64" height="755.684" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4.43003"/>
 <feGaussianBlur stdDeviation="2.21502"/>
@@ -445,8 +442,8 @@ render(){
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_dd" x="871.542" y="362.188" width="184.566" height="277.014" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter1_dd" x="871.542" y="362.188" width="184.566" height="277.014" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4.43003"/>
 <feGaussianBlur stdDeviation="2.21502"/>
@@ -471,10 +468,9 @@ render(){
                  <button data-aos='fade-righ'className='secondary' onClick={this.onResumeClick}>
       Resume
    </button>
+   <div className='arrow'></div>
          
-
                     </div> 
-
 </section>
 {/* ////////////////// */}
 <section id='about' className="section">
@@ -527,8 +523,9 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
       <Card key={index}className='card' >
 {/* data-aos="fade-right" */}
+<a href={info.deploy?info.deploy:info.youtube}>
       <Card.Img  className='picturep'variant="top"  alt='pic' src={info.main} />
-   {/* data-aos="fade-left" */}
+  </a> {/* data-aos="fade-left" */}
       <Card.Body className='body'>
  <div >
  <Card.Title><h2>{info.name}</h2></Card.Title>
@@ -539,9 +536,9 @@ look around and <a className='con' href='#contact'>contact</a> me !
  
  </div>
  <div className='external-l'>
- <a href={info.gitLink}><AiFillGithub size={20}/></a>
- <a href={info.youtube}><RiYoutubeLine size={20}/></a>
- { info.deploy?<a href={info.deploy}><HiExternalLink size={20}/></a>:''}
+ <a className='e-l'href={info.gitLink}><AiFillGithub size={20}/></a>
+ <a className='e-l'href={info.youtube}><RiYoutubeLine size={20}/></a>
+ { info.deploy?<a className='e-l'href={info.deploy}><HiExternalLink size={20}/></a>:''}
  </div>
       </Card.Body>
 
