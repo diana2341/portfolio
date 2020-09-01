@@ -1185,5 +1185,63 @@ font-size: 14px
 @media only screen and (max-width:1008px) {
   .arrow{
 display: none;  }
+
+}
+/* iphone 5 */
+@media only screen and (max-width:1008px) {
+  
+#projects{
+  height: 385vh;
+}
+.presentation{
+  top: -17%;
+}
+.intro{
+  top: -35px;
+  left: -60px;
+}
+.intro-se{
+  top: -230px;
+  left: -50px;
+
+}
+#mee{
+  top: -20px;
+}
+.secondary{
+  top: -40px;
+}
+.tags{
+  left: 1%;
+}
+.my-info{
+  width: 290%;
+  height: 30%;
+  left: -220%;
+  top: 20px;
+  font-size: 17px;
+}
+.p{
+font-size: 11px
+}
+.allstacks{
+  top: 35%;
+
+}
+#meee{
+  top: -32%;
+  left: -80%;
+  border-radius: 0;
+}
+#projects{
+  height: 440vh;
+}
+.presentation{
+  top: -20%;
+}
+.tags{
+  font-size: 17px;
+}
+
 }
 
