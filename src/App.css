@@ -1274,3 +1274,19 @@ font-size: 11px
    left: -70%;
  }
 }
+@media only screen and (max-width:414px) {
+  #meee{
+    left: -65%;
+  }
+  #projects{
+    height: 362vh;
+    
+  }
+  .intro{
+    top: 10%;
+  }
+  .tags{
+    font-size: 20px;
+    left: 9%;
+  }
+}

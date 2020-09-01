@@ -648,7 +648,7 @@ look around and <a className='con' href='#contact'>contact</a> me !
 
 </form>
 
-<div data-aos="zoom-in"className='social'>
+<div className='social'>
 <a href='https://medium.com/@dianaponce2341'><FaMedium  className='soc'size={50} /></a>
 <a href='https://www.linkedin.com/in/diana-ponce-1718821a2/'>< FaLinkedin className='soc'size={50}/></a>
 <a href='https://www.instagram.com/diana.poncee/'>< FaInstagramSquare className='soc'size={50}/></a>
