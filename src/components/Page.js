@@ -529,7 +529,7 @@ look around and <a className='con' href='#contact'>contact</a> me !
       <Card.Body className='body'>
  <div >
  <Card.Title><h2>{info.name}</h2></Card.Title>
- <Card.Text>{info.description}</Card.Text>
+ <Card.Text >{info.description}</Card.Text>
  <ListGroup className="list-group-flush">
 {info.tools.split(',').map((line,index) => <ListGroupItem key={index}className='list'> {line}</ListGroupItem> )}  </ListGroup>
 
