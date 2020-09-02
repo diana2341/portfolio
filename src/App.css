@@ -1028,6 +1028,7 @@ form{
 @media only screen and (max-width:768px) {
   .tags{
     font-size: 36px;
+    left: 20px;
   }
   #projects{
     height: 290vh;
@@ -1051,6 +1052,10 @@ form{
   }
   .intro{
     top: -60px;
+    left: -80px;
+  }
+  .intro-se{
+    left: -80px;
   }
   .secondary{
     top:10%
@@ -1293,33 +1298,6 @@ z-index: -999;
 }
 
 
-@media only screen and (max-width:375px) {
-  #projects{
-    height: 362vh;
-    
-  }
-  .presentation{
-    top: -20%;
-  }
-  #meee{
-    left: -68%;
-  }
- form{
-   height: 40%;
- }
- #env{
-   top: -280px;
- }
- .btn{
-  top: -80px;
-
- }
- .social{
-   top: 25%;
-   left: -70%;
- }
-}
-
 
 @media only screen and (max-width: 668px) {
   .title{
@@ -1348,21 +1326,269 @@ z-index: -999;
  @media only screen and (max-width:450px) {
   #meee{
     left: -60%;
+    top: -28%;
+  }
+  .my-info{
+    width: 400px;
+    font-size: 20px;
+    left: -300px;
+    top: -95px;
+
   }
   .tags{
     font-size: 20px;
     left: 10%;
   }
+  .p{
+    font-size: 15px;
+  }
+  .intro{
+    top: 15px;
+    left: -75px;
+  }
   .intro-se{
-    top: -280px;
+    top: -240px;
+    left: -70px;
   }
   form{
     top: -10%;
+    height: 50%;
+  }
+  #contact{
+    height:130vh
   }
   .social{
     top:20%
   }
+ #home{
+   height: 100vh;
+ }
+ #mee{
+   top: 15%;
+ }
+ .secondary{
+   font-size: 25px;
+ }
+ #about{
+   height: 250vh;
+ }
+ .my-info{
+   top: 10px;
+   left: -130%;
+ }
+ #about{
+   height: 150vh;
+ }
+ .allstacks{
+   left: 30%;
+   top: 30%;
+ }
+ #projects{
+   height:550vh
+ }
+
+.presentation{
+  top: -18%;
+}
+.picturep{
+  left: -80px;
+}
 } 
+
+/* galaxy fold */
+ @media only screen and (max-width:414px) {
+  .tags{
+    font-size: 20px;
+  }
+  .social{
+    left: -68%;
+    top: 40%;
+  }
+ 
+  .title2{
+    left: 30%;
+  }
+  .intro-se{
+    top: -170px;
+  }
+  
+  #home{
+    height: 100vh;
+  }
+  #meee{
+    left: -60%;
+    top: -33%;
+  }
+  .my-info{
+    font-size: 16px;
+    left: -170%;
+    width: 280%;
+    font-size: 20px;
+    top: -40px;
+  }
+  .intro{
+    top: 10px;
+    left: -75px;
+  }
+  .intro-se{
+    top: -230px;
+    left: -65px;
+
+  }
+  .secondary{
+    font-size:30px ;
+    cursor: pointer;
+  }
+  .allstacks{
+    top: 25%;
+    left: 30%;
+  }
+  .p{
+    font-size: 15px;
+  }
+  #about{
+    height: 130vh;
+  }
+  #projects{
+    height: 430vh;
+  }
+  .presentation{
+    top: -17%;
+  }
+  .picturep{
+    left: -20%;
+  }
+  form{
+    height: 50%;
+    top: -3%;
+  }
+  #contact{
+    height: 100vh;
+  }
+} 
+
+
+/* pixel2 */
+@media only screen and (max-width:411px) {
+  .intro{
+    top: -2%;
+    left: -80px;
+  }
+  .intro-se{
+    top: -230px;
+    left: -70px;
+
+  }
+  .tags{
+    left: 5%;
+    font-size: 20px;
+  }
+  .my-info{
+    width: 300%;
+    height: 30%;
+    left: -170%;
+    top: 14px;
+  }
+  .p{
+  font-size: 14px
+  }
+  .allstacks{
+    top: 35%;
+    left: 110px;
+  
+  }
+  #about{
+    height: 120vh;
+  }
+  #meee{
+    top: -27%;
+    left: -55%;
+    border-radius: 0;
+  }
+  .title3{
+    left: 35%;
+  }
+  .secondary{
+    font-size: 26px;
+  }
+  .picturep{
+    left: -55px;
+  }
+  form{
+    height: 40%;
+  }
+  #env{
+    top: -100%;
+  }
+  #contact{
+    height: 100vh;
+  }
+  .btn{
+    top: -40%;
+  }
+  .social{
+    left: -65%;
+  }
+  #projects{
+    height: 440vh;
+  }
+  .presentation{
+    top: -18%;
+  }
+}
+/* galaxy s5 */
+@media only screen and (max-width:375px) {
+  #projects{
+    height: 362vh;
+    
+  }
+  .presentation{
+    top: -20%;
+  }
+  #meee{
+    left: -68%;
+  }
+ form{
+   height: 40%;
+ }
+ #env{
+   top: -280px;
+ }
+ .btn{
+  top: -80px;
+
+ }
+ .social{
+   top: 25%;
+   left: -70%;
+ }
+ .title{
+   left: -14%;
+ }
+ .tags{
+   left: -2%;
+ }
+ #meee{
+   left: -60%;
+ }
+ #projects{
+   height: 455vh;
+ }
+ .my-info{
+   font-size: 18px;
+   top: 25px;
+   left: -200px;
+ }
+ .presentation{
+   top: -17%;
+ }
+ form{
+   height: 45%;
+ }
+ .secondary{
+   left: 30px;
+ }
+}
 /* motog4 */
 @media only screen and (max-width: 360px) {
  .box{
@@ -1413,113 +1639,6 @@ font-size: 14px
 }
 
 }
-/* iphone plus */
-@media only screen and (max-width:414px) {
-  #meee{
-    left: -65%;
-  }
-  #projects{
-    height: 362vh;
-    
-  }
-  .intro{
-    top: 10%;
-  }
-  .tags{
-    font-size: 20px;
-    left: 9%;
-  }
-}
-/* iphone x */
-@media only screen and (max-width:414px) {
-  #mee{
-    top: 10%;
-  }
-  .secondary{
-    top: 19px;
-    left: 10%;
-  }
-  .p{
-    font-size: 13px;
-  }
-  #meee{
-    left: -70%;
-  }
-  #projects{
-    height: 310vh;
-  }
-  .tags{
-    left: 2%;
-  }
-}
-/* galaxy fold */
- @media only screen and (max-width:414px) {
-  .tags{
-    font-size: 14px;
-  }
-  .social{
-    left: -78%;
-  }
-  #projects{
-    height: 370vh;
-  }
-  .title2{
-    left: 30%;
-  }
-  .intro-se{
-    top: -170px;
-  }
-  
-  #home{
-    height: 100vh;
-  }
-  #meee{
-    left: -90%;
-  }
-  .my-info{
-    font-size: 16px;
-    left: -250%;
-  }
-} 
-
-
-/* pixel2 */
-@media only screen and (max-width:411px) {
-  .intro{
-    top: -2%;
-    left: -80px;
-  }
-  .intro-se{
-    top: -230px;
-    left: -70px;
-
-  }
-  .tags{
-    left: 1%;
-  }
-  .my-info{
-    width: 280%;
-    height: 30%;
-    left: -210%;
-    top: 20px;
-  }
-  .p{
-  font-size: 14px
-  }
-  .allstacks{
-    top: 35%;
-  
-  }
-  #meee{
-    top: -32%;
-    left: -70%;
-    border-radius: 0;
-  }
-  .title3{
-    left: 35%;
-  }
-}
-/* galaxy s5 */
 @media only screen and (max-width:360px) {
   .title3{
     left: 33%;
@@ -1556,6 +1675,7 @@ font-size: 14px
   }
   .my-info{
     top: -40px;
+    left: -180%;
   }
   .allstacks{
     top: 25%;
@@ -1566,11 +1686,11 @@ font-size: 14px
 
   }
   #projects{
-    height: 460vh;
+    height: 480vh;
 
   }
   .presentation{
-    top: -18%;
+    top: -20%;
   }
  .picturep{
    left: -25%;
@@ -1578,5 +1698,45 @@ font-size: 14px
  #contact{
    height: 100vh;
  }
+ .tags{
+   font-size: 20px;
+ }
  }
 
+ @media only screen and (max-width:320px) {
+   .tags{
+     font-size: 17px;
+   }
+   .my-info{
+     top: -10px;
+     left: -160%;
+   }
+   .allstacks{
+     top: 30%;
+
+   }
+   .p{
+font-size: 10px;
+   }
+   #projects{
+     height: 500vh;
+   }
+ }
+ @media only screen and (max-width:280px) {
+.intro{
+  top:-10px
+}
+#meee{
+  left:-190px
+}
+.my-info{
+  font-size: 15px;
+  top: -26px;
+}
+.allstacks{
+  left: 85px;
+}
+.social{
+  left: -220px;
+}
+ }

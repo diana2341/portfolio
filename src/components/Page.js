@@ -162,11 +162,11 @@ render(){
   <div className="box">
       {/* <div data-aos='zoom-in'className='white'>     */}
 {/* <img  className='desk'src={require('../imgs/com.png')}/> */}
-               <h2  data-aos="fade-right"className="title intro">
+               <h2  className="title intro">
                   Hi, My name is
                Diana Ponce
                  </h2>
-                 <svg data-aos='zoom-in'id="mee"width="1532"  viewBox="0 0 1532 747" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg id="mee"width="1532"  viewBox="0 0 1532 747" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_visualization_c2ps 1" clipPath="url(#clip0)" filter="url(#filter0_d)">
 <g id="undraw_hacker_mind_6y85 1 1">
 <g id="undraw hacker mind 6y85 1">
@@ -463,9 +463,9 @@ render(){
 </svg>
 
 
-                 <p data-aos="fade-right"className='title intro-se'>Full-Stack Developer</p>
+                 <p className='title intro-se'>Full-Stack Developer</p>
                  {/* <a href = {Pdf} >resume</a> */}
-                 <button data-aos='fade-righ'className='secondary' onClick={this.onResumeClick}>
+                 <button className='secondary' onClick={this.onResumeClick}>
       Resume
    </button>
    <div className='arrow'></div>
