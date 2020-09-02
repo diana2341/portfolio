@@ -475,7 +475,7 @@ render(){
 {/* ////////////////// */}
 <section id='about' className="section">
   <h1 id='descrip'>A little bit about me..</h1>
- <div  data-aos='fade-up'className='allstacks'>
+ <div  className='allstacks'>
 <h1>My Skills</h1>
 <div className='ul'>
 <p className='p'>JavaScript</p>

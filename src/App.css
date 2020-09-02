@@ -787,8 +787,202 @@ animation: down 2s linear infinite;
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
 
 
+@media only screen and (max-width:1008px) {
+  .arrow{
+display: none;  }
 
+}
+/* iohone 6 */
 
+/* iphone 5 */
+@media only screen and (max-width:1008px) {
+  
+  
+#projects{
+  height: 385vh;
+}
+.presentation{
+  top: -17%;
+}
+.intro{
+  top: -35px;
+  left: -60px;
+}
+.intro-se{
+  top: -230px;
+  left: -50px;
+
+}
+#mee{
+  top: -20px;
+}
+.secondary{
+  top: -40px;
+}
+.tags{
+  left: 1%;
+}
+.my-info{
+  width: 290%;
+  height: 30%;
+  left: -220%;
+  top: 20px;
+  font-size: 17px;
+}
+.p{
+font-size: 11px
+}
+.allstacks{
+  top: 35%;
+
+}
+#meee{
+  top: -32%;
+  left: -80%;
+  border-radius: 0;
+}
+#projects{
+  height: 440vh;
+}
+.presentation{
+  top: -20%;
+}
+.tags{
+  font-size: 17px;
+}
+
+}
+/* ipad pro */
+ @media only screen and (max-width:1024px) {
+  .section{
+    width: 100%;
+    height: 1300px;
+  }
+  #meee{
+    left: -60%;
+  }
+  .tags{
+    font-size: 20px;
+    left: 10%;
+  }
+  .intro-se{
+    font-size: 60px;
+    top: -470px;
+    left: -10%;
+
+  }
+  form{
+    top: -10%;
+  }
+  .social{
+    top:20%
+  }
+  .icon{
+    display: none;
+  }
+  .intro{
+    font-size: 60px;
+  left: -10%;
+    top: 10%;
+  }
+  #mee{
+    width: 105%;
+    left: -25%;
+  }
+  .secondary{
+    top: 35px;
+    left: 25%;
+    width: 20%;
+    font-size: 40px;
+    z-index: -999;
+  }
+  .arrow{
+    display: none;
+  }
+  .nav{
+    position: relative;
+      overflow: hidden;
+    background-color: #245a66;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 999;
+
+  }
+  .tags{
+    position: relative;
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    padding: 30px;
+    left: 10%;
+    font-family: 'Gruppo';
+    font-weight: 600;
+    column-gap: 50px;
+  }
+  .box-nav,.sidenav{
+    display: none;
+  }
+  #meee{
+    width: 30%;
+    top: -5%;
+  }
+  .my-info{
+    width: 200%;
+    font-size:30px ;
+    z-index: -999;
+  }
+  #descrip{
+display: none  }
+.p{
+  font-size: 25px;
+}
+.allstacks{
+  column-gap: 60px;
+  top: 35%;
+  left: 25%;
+  z-index: -999;
+}
+.presentation{
+  top: 1%;
+}
+.title2{
+  top: -60px;
+  left: 40%;
+}
+.body{
+  font-size: 20px;
+  top: -70%;
+}
+.picturep{
+  position: relative;
+  width: 140%;
+  left: -160px;
+}
+.presentation{
+  top: -4%;
+}
+#projects{
+  height: 220vh;
+}
+.social{
+  top: 23%;
+  left: -60%;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 50px;
+}
+form{
+  width:90%;
+  
+}
+.form-group{
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+}
 @media only screen and (max-width: 976px) {
   .title{
     left: 25px;
@@ -831,6 +1025,50 @@ animation: down 2s linear infinite;
     }
   }
 }
+@media only screen and (max-width:768px) {
+  .tags{
+    font-size: 36px;
+  }
+  #projects{
+    height: 290vh;
+  
+  }
+  .presentation{
+    top: -1%;
+  
+  }
+  .title2{
+    position: relative;
+    top: -115px;
+  }
+  .body{
+    width: 100%;
+    left: 95%;
+  }
+  .picturep{
+    position: relative;
+    top: -50px;
+  }
+  .intro{
+    top: -60px;
+  }
+  .secondary{
+    top:10%
+  
+  }
+  #meee{
+    left: -20%;
+    top: -20%;
+  }
+  .my-info{
+    top: -160px;
+  }
+  .allstacks{
+    top: 30%;
+  }
+  } 
+  
+
 @media only screen and (max-width: 600px) {
  
   /* #me{
@@ -1053,16 +1291,47 @@ z-index: -999;
     left: 35%;
   }
 }
-@media only screen and (max-width: 608px) {
-  .title{
-    left: 60px;
+
+
+@media only screen and (max-width:375px) {
+  #projects{
+    height: 362vh;
+    
   }
+  .presentation{
+    top: -20%;
+  }
+  #meee{
+    left: -68%;
+  }
+ form{
+   height: 40%;
+ }
+ #env{
+   top: -280px;
+ }
+ .btn{
+  top: -80px;
+
+ }
+ .social{
+   top: 25%;
+   left: -70%;
+ }
 }
+
+
 @media only screen and (max-width: 668px) {
   .title{
     left: 65px;
   }
 }
+@media only screen and (max-width: 608px) {
+  .title{
+    left: 60px;
+  }
+}
+
 @media only screen and (max-width: 598px) {
   .title{
     left: -80px;
@@ -1075,6 +1344,25 @@ z-index: -999;
     top: 10px;
   }
 }
+/* surface duo */
+ @media only screen and (max-width:450px) {
+  #meee{
+    left: -60%;
+  }
+  .tags{
+    font-size: 20px;
+    left: 10%;
+  }
+  .intro-se{
+    top: -280px;
+  }
+  form{
+    top: -10%;
+  }
+  .social{
+    top:20%
+  }
+} 
 /* motog4 */
 @media only screen and (max-width: 360px) {
  .box{
@@ -1125,155 +1413,6 @@ font-size: 14px
 }
 
 }
-/* galaxy s5 */
-@media only screen and (max-width:360px) {
- .title3{
-   left: 33%;
- }
- form{
-   height: 40%;
-   top: -10%;
-
- }
- #env{
-   top: -90%;
- }
- .btn{
-   top: -30%;
- }
- .social{
-   top: 15%;
-   left: -70%;
- }
-}
-/* pixel2 */
-@media only screen and (max-width:411px) {
-  .intro{
-    top: -2%;
-    left: -80px;
-  }
-  .intro-se{
-    top: -230px;
-    left: -70px;
-
-  }
-  .tags{
-    left: 1%;
-  }
-  .my-info{
-    width: 280%;
-    height: 30%;
-    left: -210%;
-    top: 20px;
-  }
-  .p{
-  font-size: 14px
-  }
-  .allstacks{
-    top: 35%;
-  
-  }
-  #meee{
-    top: -32%;
-    left: -70%;
-    border-radius: 0;
-  }
-  .title3{
-    left: 35%;
-  }
-}
-@media only screen and (max-width:1008px) {
-  .arrow{
-display: none;  }
-
-}
-/* iohone 6 */
-
-/* iphone 5 */
-@media only screen and (max-width:1008px) {
-  
-  
-#projects{
-  height: 385vh;
-}
-.presentation{
-  top: -17%;
-}
-.intro{
-  top: -35px;
-  left: -60px;
-}
-.intro-se{
-  top: -230px;
-  left: -50px;
-
-}
-#mee{
-  top: -20px;
-}
-.secondary{
-  top: -40px;
-}
-.tags{
-  left: 1%;
-}
-.my-info{
-  width: 290%;
-  height: 30%;
-  left: -220%;
-  top: 20px;
-  font-size: 17px;
-}
-.p{
-font-size: 11px
-}
-.allstacks{
-  top: 35%;
-
-}
-#meee{
-  top: -32%;
-  left: -80%;
-  border-radius: 0;
-}
-#projects{
-  height: 440vh;
-}
-.presentation{
-  top: -20%;
-}
-.tags{
-  font-size: 17px;
-}
-
-}
-
-@media only screen and (max-width:375px) {
-  #projects{
-    height: 362vh;
-    
-  }
-  .presentation{
-    top: -20%;
-  }
-  #meee{
-    left: -68%;
-  }
- form{
-   height: 40%;
- }
- #env{
-   top: -280px;
- }
- .btn{
-  top: -80px;
-
- }
- .social{
-   top: 25%;
-   left: -70%;
- }
-}
 /* iphone plus */
 @media only screen and (max-width:414px) {
   #meee{
@@ -1314,7 +1453,7 @@ font-size: 11px
   }
 }
 /* galaxy fold */
-@media only screen and (max-width:414px) {
+ @media only screen and (max-width:414px) {
   .tags{
     font-size: 14px;
   }
@@ -1330,9 +1469,7 @@ font-size: 11px
   .intro-se{
     top: -170px;
   }
-  .box{
-    /* top: -10%; */
-  }
+  
   #home{
     height: 100vh;
   }
@@ -1343,196 +1480,103 @@ font-size: 11px
     font-size: 16px;
     left: -250%;
   }
-}
-/* surface duo */
-@media only screen and (max-width:450px) {
-  #meee{
-    left: -60%;
-  }
-  .tags{
-    font-size: 20px;
-    left: 10%;
-  }
-  .intro-se{
-    top: -280px;
-  }
-  form{
-    top: -10%;
-  }
-  .social{
-    top:20%
-  }
-}
-/* ipad pro */
-@media only screen and (max-width:1024px) {
-  .section{
-    width: 100%;
-    height: 1300px;
-  }
-  #meee{
-    left: -60%;
-  }
-  .tags{
-    font-size: 20px;
-    left: 10%;
-  }
-  .intro-se{
-    font-size: 60px;
-    top: -470px;
-    left: -10%;
+} 
 
-  }
-  form{
-    top: -10%;
-  }
-  .social{
-    top:20%
-  }
-  .icon{
-    display: none;
-  }
+
+/* pixel2 */
+@media only screen and (max-width:411px) {
   .intro{
-    font-size: 60px;
-  left: -10%;
-    top: 10%;
+    top: -2%;
+    left: -80px;
   }
-  #mee{
-    width: 105%;
-    left: -25%;
-  }
-  .secondary{
-    top: 35px;
-    left: 25%;
-    width: 20%;
-    font-size: 40px;
-    z-index: -999;
-  }
-  .arrow{
-    display: none;
-  }
-  .nav{
-    position: relative;
-      overflow: hidden;
-    background-color: #245a66;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 10%;
-    z-index: 999;
+  .intro-se{
+    top: -230px;
+    left: -70px;
 
   }
   .tags{
-    position: relative;
-    font-size: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 20px;
-    padding: 30px;
-    left: 10%;
-    font-family: 'Gruppo';
-    font-weight: 600;
-    column-gap: 50px;
-  }
-  .box-nav,.sidenav{
-    display: none;
-  }
-  #meee{
-    width: 30%;
-    top: -5%;
+    left: 1%;
   }
   .my-info{
-    width: 200%;
-    font-size:30px ;
-    z-index: -999;
+    width: 280%;
+    height: 30%;
+    left: -210%;
+    top: 20px;
   }
-  #descrip{
-display: none  }
-.p{
-  font-size: 25px;
-}
-.allstacks{
-  column-gap: 60px;
-  top: 35%;
-  left: 25%;
-  z-index: -999;
-}
-.presentation{
-  top: 1%;
-}
-.title2{
-  top: -60px;
-  left: 40%;
-}
-.body{
-  font-size: 20px;
-  top: -70%;
-}
-.picturep{
-  position: relative;
-  width: 140%;
-  left: -160px;
-}
-.presentation{
-  top: -4%;
-}
-#projects{
-  height: 220vh;
-}
-.social{
-  top: 23%;
-  left: -60%;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 50px;
-}
-form{
-  width:90%;
+  .p{
+  font-size: 14px
+  }
+  .allstacks{
+    top: 35%;
   
+  }
+  #meee{
+    top: -32%;
+    left: -70%;
+    border-radius: 0;
+  }
+  .title3{
+    left: 35%;
+  }
 }
-.form-group{
-  position: relative;
-  width: 90%;
-  left: 5%;
-}
-}
-@media only screen and (max-width:768px) {
-.tags{
-  font-size: 36px;
-}
-#projects{
-  height: 290vh;
+/* galaxy s5 */
+@media only screen and (max-width:360px) {
+  .title3{
+    left: 33%;
+  }
+  form{
+    height: 55%;
+    top: -10%;
+ 
+  }
+  #env{
+    top: -90%;
+  }
+  .title2{
+    top: -45px;
+  }
+  .btn{
+    top: -30%;
+  }
+  .social{
+    top: 25%;
+    left: -70%;
+  }
+  .intro{
+    left: -55px;
 
-}
-.presentation{
-  top: -1%;
+  }
+  .intro-se{
+    top: -190px;
+    left: -47px;
+  }
+  #meee{
+    top: -30%;
+    left: -65%;
+  }
+  .my-info{
+    top: -40px;
+  }
+  .allstacks{
+    top: 25%;
+    left: 27%;
+  }
+  #about{
+    height: 140vh;
 
-}
-.title2{
-  position: relative;
-  top: -115px;
-}
-.body{
-  width: 100%;
-  left: 95%;
-}
-.picturep{
-  position: relative;
-  top: -50px;
-}
-.intro{
-  top: -60px;
-}
-.secondary{
-  top:10%
+  }
+  #projects{
+    height: 460vh;
 
-}
-#meee{
-  left: -20%;
-  top: -20%;
-}
-.my-info{
-  top: -160px;
-}
-.allstacks{
-  top: 30%;
-}
-}
+  }
+  .presentation{
+    top: -18%;
+  }
+ .picturep{
+   left: -25%;
+ }
+ #contact{
+   height: 100vh;
+ }
+ }
+
