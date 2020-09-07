@@ -80,7 +80,9 @@ a:hover{
   display: flex;
   justify-content: center;
   height: 800px;
-  width: 100%;
+  /* width: 1400px; */
+  width: 100vw;
+
   /* z-index: -1; */
   overflow: hidden;
 }
@@ -114,7 +116,7 @@ a:hover{
 .intro{
   position: relative;
   /* z-index: 9; */
-  left:-3%;
+  left:-40px;
   top:3em;
 }
 .about-content{
@@ -262,11 +264,11 @@ left: -150%;
 } 
 .icon{
   position: relative;
-  width: 3.5vh;
+  width: 25px;
   /* height: auto; */
 }
 .home{
-  top: -5vh;
+  top:-35px
 
 }
 /* #medium{
@@ -279,17 +281,17 @@ left: -150%;
 
 }
 .contact{
-  top:-4vh
+  top:-35px
 }
 .woman{
-  width: 4.3vh;
+  width: 28px;
 
-  top:-5vh
+  top:-38px
 }
 .computer{
-  width: 3.5vh;
+  width: 25px;
 
-  top:-4.5vh
+  top:-35px
 }
 .me{
   position: relative;
@@ -322,7 +324,7 @@ left: -150%;
   left: 2%;
   top: -159px;
   
-  z-index: 999;
+  z-index: -999;
  cursor: pointer; ;
  outline:none;
 
@@ -791,12 +793,24 @@ animation: down 2s linear infinite;
 }
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
 
+@media only screen and (max-width:1034px) {
+  .allstacks{
+    top: 300px;
+  }
+  .intro-se,.intro{
+    left: 10px;
 
+  }
+}
 @media only screen and (max-width:1024px) {
   .section{
     width: 100%;
     height: 1300px;
   }
+  /* #home{
+    height: 100vh;
+  } */
+
   #meee{
     left: -60%;
   }
@@ -806,8 +820,8 @@ animation: down 2s linear infinite;
   }
   .intro-se{
     font-size: 60px;
-    top: -10px;
-    left: -10%;
+    /* top: 1px; */
+    /* left: -100px; */
 
   }
   form{
@@ -822,21 +836,21 @@ animation: down 2s linear infinite;
   .intro{
     font-size: 60px;
   left: -10%;
-    top: 10%;
   }
   .box{
-    top: -120px;
+    top: -50px;
   }
   #mee{
-    width: 105%;
-    left: -25%;
+    width: 750px;
+    left: 15%;
+    top: 100px;
   }
   .secondary{
     top: 35px;
-    left: 25%;
+    left: 25px;
     width: 20%;
     font-size: 40px;
-    z-index: -999;
+    /* z-index: -999; */
   }
   .arrow{
     display: none;
@@ -861,7 +875,7 @@ animation: down 2s linear infinite;
     grid-template-columns: auto auto auto auto;
     column-gap: 20px;
     padding: 30px;
-    left: 10%;
+    left: 15%;
     font-family: 'Gruppo';
     font-weight: 600;
     column-gap: 50px;
@@ -935,17 +949,28 @@ display: none;  }
   font-size: 8px;
 }
 }
-@media only screen and (max-width:1008px) {
-  .arrow{
-display: none;  }
-
+@media only screen and (max-width:1017px) {
+  #projects{
+    height: 500vh;
+  }
+  #home{
+    height: 100vh;
+  }
+  .box{
+    top: -80px;
+  }
 }
+
 /* iohone 6 */
 
 /* iphone 5 */
 @media only screen and (max-width:1008px) {
   
-  
+  .arrow{
+    display: none; 
+   }
+    
+    
 #projects{
   height: 385vh;
 }
@@ -953,47 +978,29 @@ display: none;  }
   top: -17%;
 }
 .intro{
-  top: -35px;
-  left: -60px;
+  top: 190px;
+  left: -50px;
 }
 .intro-se{
-  top: -230px;
+  top: 190px;
   left: -50px;
 
 }
 #mee{
-  top: -20px;
+  top: 30px;
 }
 .secondary{
   top: -40px;
 }
 .tags{
-  left: 1%;
+  left: 15%;
 }
-.my-info{
-  width: 290%;
-  height: 30%;
-  left: -220%;
-  top: 20px;
-  font-size: 17px;
-}
-.p{
-font-size: 11px
-}
-.allstacks{
-  top: 35%;
 
-}
-#meee{
-  top: -32%;
-  left: -80%;
-  border-radius: 0;
-}
 #projects{
-  height: 440vh;
+  height: 540vh;
 }
 .presentation{
-  top: -20%;
+  top: -5%;
 }
 .tags{
   font-size: 17px;
@@ -1053,21 +1060,6 @@ form{
   top: -4%;
 }
 }
-@media only screen and (max-width: 976px) {
-  .title{
-    left: 25px;
-
-  }
-  .secondary{
-    position: relative;
-    left: 38%;
-    top: -1px;
-  }
-  .arrow{
-    left: 43%;
-    animation: down 2s linear infinite;
-
-  }
   @media only screen and (max-width: 976px) {
     .title{
       left: 25px;
@@ -1075,15 +1067,23 @@ form{
     }
     .secondary{
       position: relative;
-      left: 38%;
-      top: -1px;
+      left: 3%;
+      top: -55px;
     }
     .arrow{
       left: 43%;
       animation: down 2s linear infinite;
   
     }
+    .box{
+      left: 55px;
+    }
+    .tags{
+      left: 180px;
+    }
   }
+
+
   @keyframes down{
     0%{
       top: 42px;
@@ -1094,7 +1094,15 @@ form{
   
     }
   }
-}
+  @media only screen and (max-width:824px) {
+    .tags>a{
+      font-size: 26px;
+
+    }
+    .tags{
+      left: 95px;
+    }
+  }
 @media only screen and (max-width:768px) {
   .tags{
     font-size: 36px;
@@ -1121,19 +1129,19 @@ form{
     top: -50px;
   }
   .intro{
-    top: -120px;
-    left: -80px;
+    top: 190px;
+    left: -30px;
   }
   .intro-se{
-    left: -80px;
+    left: -30px;
   }
   .secondary{
     top:10%
   
   }
   #meee{
-    left: -20%;
-    top: -20%;
+    left: -30%;
+    top: -15%;
   }
   .my-info{
     top: -160px;
@@ -1142,81 +1150,44 @@ form{
     top: 30%;
   }
   } 
-  
-
+  @media only screen and (max-width: 764px) {
+    #projects{
+      height: 450vh;
+    }
+  }
+  @media only screen and (max-width: 664px) {
+    .my-info{
+      left: -230px;
+    }
+  }
 @media only screen and (max-width: 600px) {
  
-  /* #me{
-    max-width: 100vh;
-    height: auto;
-    left: 15vw;
-    top: 6.4vh;  } */
     .icon,.me{
       display: none;
     }
     
   
+ .allstacks{
+   left: 250px;
+ }
   
-  .sidenav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    top: -1em;
-    left: -3%;
-
-  }
-  
-  .sidenav a:hover {
-    background: #ddd;
-    color: black;
-  }
+ 
   .job{
     display: none;
   }
-  form{
-width: 80%;
-height: 50%;
-  }
-  #env{
-    top: -70%;
-  }
-  .form-control{
-    width: 63%;
-    top: -2px;
-    height: 60%;
-  }
- .btn{
-   
-   left: 1%;
-   top: -15%;
- }
+
 
 .title3{
   left: 63%;
 }
-.column{
-  position: relative;
-  left: -24%;
-  display: grid;
-  grid-template-columns: auto   ;
-  width: 200%;
-  top: 0em;
-  row-gap: 5%;
-  /* overflow: scroll; */
-  
-}
+
 #projects{
-  margin: 0;
-  height: 340vh;
+  height: 640vh;
 
   
 }
 .presentation{
-  top: -48em;
+  top: -68em;
 
 }
 .link{
@@ -1230,40 +1201,29 @@ height: 50%;
 
   .secondary{
     position: relative;
-    top: 50px;
+    top: -50px;
     left: 60px;
-    width: 40%;
+    width: 20%;
     height: 50px;
     z-index: -999;
   }
   .intro{
     position: relative;
-    left: -8%;
-    font-size: 35px;
-    padding: 3%; 
-    top: 10px;
+    font-size: 45px;
+
  }
  #mee{
    width: 115%;
-   left: -35%;
+   left: -15%;
  }
  .intro-se{
-   top: -230px;
-   left: -5%;
-   font-size: 35px;
+  
+   font-size: 45px;
 
 
  }
-  ul {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    z-index: -999;
-    display: none;
+
   
-  }
-  #meee{
-    border: solid white;
-  }
   .sidenav {
     /* overflow: hidden;
     background-color: #245a66;
@@ -1274,17 +1234,7 @@ height: 50%;
     z-index: 999; */
     display: none;
   }
-  .nav{
-    position: relative;
-      overflow: hidden;
-    background-color: #245a66;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 999;
 
-  }
   
   .tags{
     position: relative;
@@ -1300,37 +1250,10 @@ height: 50%;
  #descrip{
    visibility: hidden;
  }
-  .my-info{
-    left: -240%;
-    top: -70px;
-    /* width: 150px; */
+  
 
-    /* visibility: hidden; */
-  }
-  .para{
-width: 160px; 
-/* left: 55%;
-top: -17%; */
-z-index: -999;
- }
- #meee{
-   top: -22%;
-   width: 40%;
-   left: -45%;
 
- }
- .allstacks{
-   left: 17%;
-   z-index: -999;
-   top: 40%;
- }
- .social{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  top: 35%;
-  column-gap: 15px;
-  left: -65%;
- }
+ /*  */
  .body{
   position: relative;
   left: 0%;
@@ -1370,11 +1293,7 @@ z-index: -999;
 
 
 
-@media only screen and (max-width: 668px) {
-  .title{
-    left: 65px;
-  }
-}
+/*  */
 @media only screen and (max-width: 608px) {
   .title{
     left: 60px;
@@ -1393,33 +1312,81 @@ z-index: -999;
     top: 10px;
   }
 }
+@media only screen and (max-width: 598px) {
+  .intro{
+    left: -10px;
+    top: 190px;
+
+  }
+  .intro-se{
+    left: -10px;
+    top: 190px;
+  }
+  .secondary{
+    top: -50px;
+  }
+}
+@media only screen and (max-width: 582px) {
+  .box{
+    top: 10px;
+  }
+  .intro{
+    left: -10px;
+
+  }
+  .intro-se{
+    left: -10px;
+    top: 80px;
+  }
+  .secondary{
+    top: -170px;
+  }
+  .social{
+    left: -400px;
+  }
+  .profile-pic{
+    display: none
+  }
+  .allstacks{
+    left: 190px;
+  }
+}
+@media only screen and (max-width:474px) {
+  .secondary{
+    top: -35px;
+  }
+}
 /* surface duo */
  @media only screen and (max-width:450px) {
+   .profile-pic{
+display: inline; 
+left: 10px; 
+ }
   #meee{
-    left: -60%;
+    left: -80%;
     top: -28%;
   }
-  .my-info{
+  /* .my-info{
     width: 400px;
     font-size: 20px;
     left: -300px;
     top: -95px;
 
+  } */
+  .tags>a{
+    font-size: 23px;
   }
-  .tags{
-    font-size: 20px;
-    left: 10%;
-  }
+
   .p{
     font-size: 15px;
   }
   .intro{
     top: 15px;
-    left: -75px;
+    left: -50px;
   }
-  -se{
-    top: -240px;
-    left: -70px;
+  .intro-se{
+    top: 15px;
+    left: -50px;
   }
   form{
     top: -10%;
@@ -1429,30 +1396,36 @@ z-index: -999;
     height:130vh
   }
   .social{
-    top:20%
+    top:20%;
+    left: -350px;
+    
   }
  #home{
    height: 100vh;
  }
  #mee{
    top: 15%;
+   /* left: 10px; */
  }
  .secondary{
    font-size: 25px;
+   width: 150px;
+   left: 10px;
+   top: -190px;
  }
  #about{
    height: 250vh;
  }
  .my-info{
-   top: 10px;
-   left: -130%;
+   top: 15px;
+   font-size: 20px;
+   left: -90px;
  }
  #about{
    height: 150vh;
  }
  .allstacks{
-   left: 30%;
-   top: 30%;
+   left: 55%;
  }
  #projects{
    height:550vh
@@ -1464,15 +1437,20 @@ z-index: -999;
 .picturep{
   left: -80px;
 }
+#env{
+  top: -250px;
+}
 } 
-
+@media only screen and (max-width:416px) {
+  .my-info{
+    left: -110px;
+  }
+}
 /* galaxy fold */
  @media only screen and (max-width:414px) {
-  .tags{
-    font-size: 20px;
-  }
+
   .social{
-    left: -68%;
+    left: -85%;
     top: 40%;
   }
  
@@ -1492,27 +1470,29 @@ z-index: -999;
   }
   .my-info{
     font-size: 16px;
-    left: -170%;
+    left: -190%;
     width: 280%;
-    font-size: 20px;
+    font-size: 18px;
     top: -40px;
   }
   .intro{
     top: 10px;
-    left: -75px;
+    left: -50px;
   }
   .intro-se{
-    top: -230px;
-    left: -65px;
+    top: 1px;
+    left: -50px;
 
   }
   .secondary{
     font-size:30px ;
     cursor: pointer;
+    width: 150px;
+    left: -50px;
   }
   .allstacks{
-    top: 25%;
-    left: 30%;
+    top: 27%;
+    left: 25%;
   }
   .p{
     font-size: 15px;
@@ -1520,9 +1500,9 @@ z-index: -999;
   #about{
     height: 130vh;
   }
-  #projects{
+  /* #projects{
     height: 430vh;
-  }
+  } */
   .presentation{
     top: -17%;
   }
@@ -1533,8 +1513,16 @@ z-index: -999;
     height: 50%;
     top: -3%;
   }
-  #contact{
+  /* #contact{
     height: 100vh;
+  } */
+  .tags>a{
+    font-size: 22px;
+    
+  }
+  .tags{
+    left: 10px;
+
   }
 } 
 
@@ -1543,11 +1531,11 @@ z-index: -999;
 @media only screen and (max-width:411px) {
   .intro{
     top: -2%;
-    left: -80px;
+    left: -50px;
   }
   .intro-se{
-    top: -230px;
-    left: -70px;
+    top: -2px;
+    left: -50px;
 
   }
   .tags{
@@ -1576,41 +1564,38 @@ z-index: -999;
     left: -55%;
     border-radius: 0;
   }
+  #mee{
+    left: -120px;
+  }
   .title3{
     left: 35%;
   }
   .secondary{
     font-size: 26px;
+    top: 80px;
+    left: 60px;
   }
   .picturep{
     left: -55px;
   }
   form{
-    height: 40%;
+    height: 65%;
   }
-  #env{
-    top: -100%;
-  }
+ 
   #contact{
     height: 100vh;
   }
-  .btn{
-    top: -40%;
-  }
-  .social{
-    left: -65%;
-  }
-  #projects{
-    height: 440vh;
-  }
+
+
+.my-info{
+  left: -210px;
+}
   .presentation{
     top: -18%;
   }
 }
 @media only screen and (max-width:396px) {
-  form{
-    height: 45%;
-  }
+  /*  */
   #projects{
     height: 500vh;
   }
@@ -1644,30 +1629,16 @@ z-index: -999;
 }
 /* galaxy s5 */
 @media only screen and (max-width:375px) {
-  #projects{
-    height: 362vh;
-    
-  }
+ 
   .presentation{
     top: -20%;
   }
   #meee{
     left: -68%;
   }
- form{
-   height: 40%;
- }
- #env{
-   top: -280px;
- }
- .btn{
-  top: -80px;
+ 
+ 
 
- }
- .social{
-   top: 25%;
-   left: -70%;
- }
  .title{
    left: -14%;
  }
@@ -1677,22 +1648,24 @@ z-index: -999;
  #meee{
    left: -60%;
  }
- #projects{
-   height: 455vh;
- }
+ 
  .my-info{
    font-size: 18px;
    top: 25px;
-   left: -200px;
+   left: -220px;
  }
  .presentation{
    top: -17%;
  }
- form{
-   height: 45%;
- }
+ 
  .secondary{
    left: 30px;
+ }
+ .box{
+   top: -100px;
+ }
+ .allstacks{
+   left: 90px;
  }
 }
 /* motog4 */
@@ -1700,9 +1673,7 @@ z-index: -999;
  .box{
    top: -3%;
  }
- #projects{
-   height: 375vh;
- }
+ 
 .title{
 left: -12%;
 font-size: 30px;
@@ -1713,15 +1684,11 @@ top: 10;
   left: -50px;
 }
 .intro-se{
-  top: -210px;
-}
-.secondary{
-  top: -20%;
-  font-size: 25px;
-  height: 40px;
-  left: 30px;
+  top: -2px;
+  left: -50px;
 
 }
+
 .tags{
   left: 1%;
 }
@@ -1749,31 +1716,24 @@ font-size: 14px
   .title3{
     left: 33%;
   }
-  form{
-    height: 55%;
-    top: -10%;
+  
+  #mee{
+    top: 20px;
+  }
  
-  }
-  #env{
-    top: -90%;
-  }
   .title2{
     top: -45px;
   }
-  .btn{
-    top: -30%;
-  }
-  .social{
-    top: 25%;
-    left: -70%;
-  }
+  
+  
   .intro{
-    left: -55px;
+    left: -50px;
 
   }
   .intro-se{
-    top: -190px;
-    left: -47px;
+    top: -2px;
+  left: -50px;
+
   }
   #meee{
     top: -30%;
@@ -1804,18 +1764,28 @@ font-size: 14px
  #contact{
    height: 100vh;
  }
- .tags{
+ .tags>a{
    font-size: 20px;
  }
+ .tags{
+   top: 10px;
+ }
+ .secondary{
+  top: 90px;
+  font-size: 25px;
+  height: 40px;
+  left: 30px;
+
+}
  }
 
  @media only screen and (max-width:320px) {
-   .tags{
+   .tags>a{
      font-size: 17px;
    }
    .my-info{
      top: -10px;
-     left: -160%;
+     left: -170%;
    }
    .allstacks{
      top: 30%;
@@ -1827,22 +1797,56 @@ font-size: 10px;
    #projects{
      height: 500vh;
    }
+   .intro{
+     left: -40px;
+   }
+   .intro-se{
+     top: 10px;
+   }
+   #mee{
+     top: 10px;
+     left:-100px
+   }
+   .secondary{
+     top: 40px;
+   }
+
  }
  @media only screen and (max-width:280px) {
 .intro{
-  top:-10px
+  top:50px;
+  left: 10px;
+  
+}
+.intro-se{
+  top:50px;
+  left: 10px;
 }
 #meee{
   left:-190px
 }
+#mee{
+  top: 10%;
+  width: 400px;
+  left: -70px;
+}
 .my-info{
   font-size: 15px;
   top: -26px;
+  left: -175px;
 }
 .allstacks{
-  left: 85px;
+  left: 70px;
 }
 .social{
   left: -220px;
+}
+.secondary{
+  top: 110px;
+  left: 60px;
+}
+.tags>a{
+  font-size: 14px;
+
 }
  }

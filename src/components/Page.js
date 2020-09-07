@@ -506,7 +506,7 @@ look around and <a className='con' href='#contact'>contact</a> me !
 </p>
 </div>
 {/* <img alt='pic' id="meee" src={require('../imgs/me2.JPG')}/>  */}
-<img alt='pic' id="meee" src={require('../imgs/uno.jpg')}/> 
+<img alt='pic' className='profile-pic'id="meee" src={require('../imgs/uno.jpg')}/> 
 
 
 
