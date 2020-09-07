@@ -211,7 +211,7 @@ left: -150%;
 #mee{
   position: relative;
   left:5% ;
-  width: 75%;
+  width: 100px;
   bottom: -4em;
 }
 
@@ -784,76 +784,15 @@ animation: down 2s linear infinite;
 .e-l{
   width: 0;
 }
+.intro-se{
+  position: relative;
+  left: -50px;
+  top: 200px;
+}
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
 
 
-@media only screen and (max-width:1008px) {
-  .arrow{
-display: none;  }
-
-}
-/* iohone 6 */
-
-/* iphone 5 */
-@media only screen and (max-width:1008px) {
-  
-  
-#projects{
-  height: 385vh;
-}
-.presentation{
-  top: -17%;
-}
-.intro{
-  top: -35px;
-  left: -60px;
-}
-.intro-se{
-  top: -230px;
-  left: -50px;
-
-}
-#mee{
-  top: -20px;
-}
-.secondary{
-  top: -40px;
-}
-.tags{
-  left: 1%;
-}
-.my-info{
-  width: 290%;
-  height: 30%;
-  left: -220%;
-  top: 20px;
-  font-size: 17px;
-}
-.p{
-font-size: 11px
-}
-.allstacks{
-  top: 35%;
-
-}
-#meee{
-  top: -32%;
-  left: -80%;
-  border-radius: 0;
-}
-#projects{
-  height: 440vh;
-}
-.presentation{
-  top: -20%;
-}
-.tags{
-  font-size: 17px;
-}
-
-}
-/* ipad pro */
- @media only screen and (max-width:1024px) {
+@media only screen and (max-width:1024px) {
   .section{
     width: 100%;
     height: 1300px;
@@ -867,7 +806,7 @@ font-size: 11px
   }
   .intro-se{
     font-size: 60px;
-    top: -470px;
+    top: -10px;
     left: -10%;
 
   }
@@ -884,6 +823,9 @@ font-size: 11px
     font-size: 60px;
   left: -10%;
     top: 10%;
+  }
+  .box{
+    top: -120px;
   }
   #mee{
     width: 105%;
@@ -906,9 +848,11 @@ font-size: 11px
     position: fixed;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 90px;
     z-index: 999;
-
+  }
+  .nav a{
+    font-size: 35px;
   }
   .tags{
     position: relative;
@@ -983,6 +927,132 @@ form{
   left: 5%;
 }
 }
+
+@media only screen and (max-width:1021px) {
+  .arrow{
+display: none;  }
+.tags{
+  font-size: 8px;
+}
+}
+@media only screen and (max-width:1008px) {
+  .arrow{
+display: none;  }
+
+}
+/* iohone 6 */
+
+/* iphone 5 */
+@media only screen and (max-width:1008px) {
+  
+  
+#projects{
+  height: 385vh;
+}
+.presentation{
+  top: -17%;
+}
+.intro{
+  top: -35px;
+  left: -60px;
+}
+.intro-se{
+  top: -230px;
+  left: -50px;
+
+}
+#mee{
+  top: -20px;
+}
+.secondary{
+  top: -40px;
+}
+.tags{
+  left: 1%;
+}
+.my-info{
+  width: 290%;
+  height: 30%;
+  left: -220%;
+  top: 20px;
+  font-size: 17px;
+}
+.p{
+font-size: 11px
+}
+.allstacks{
+  top: 35%;
+
+}
+#meee{
+  top: -32%;
+  left: -80%;
+  border-radius: 0;
+}
+#projects{
+  height: 440vh;
+}
+.presentation{
+  top: -20%;
+}
+.tags{
+  font-size: 17px;
+}
+
+}
+
+
+
+/* ipad pro */
+ 
+@media only screen and (max-width:985px) {
+#home{
+  height: 100vh;
+}
+#mee{
+  width: 700px;
+  left: 10%;
+  top: 80px;
+}
+.secondary{
+  top: 140px;
+  font-size: 25px;
+}
+.intro{
+  top: 190px;
+  left: -10%;
+}
+.intro-se{
+  top:190px;
+  left: -10%;
+
+}
+#meee{
+  left: -140px;
+  top: -20%;
+}
+.my-info{
+  top: -200px;
+  width: 400px;
+  left: -70%;
+  font-size: 25px;
+}
+.allstacks{
+  top: 10%;
+  left: 35%;
+}
+
+.p{
+  font-size: 23px;
+
+}
+form{
+  top:-20%
+}
+.presentation{
+  top: -4%;
+}
+}
 @media only screen and (max-width: 976px) {
   .title{
     left: 25px;
@@ -1051,7 +1121,7 @@ form{
     top: -50px;
   }
   .intro{
-    top: -60px;
+    top: -120px;
     left: -80px;
   }
   .intro-se{
@@ -1211,10 +1281,11 @@ height: 50%;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 90px;
     z-index: 999;
 
   }
+  
   .tags{
     position: relative;
     font-size: 20px;
@@ -1346,7 +1417,7 @@ z-index: -999;
     top: 15px;
     left: -75px;
   }
-  .intro-se{
+  -se{
     top: -240px;
     left: -70px;
   }
@@ -1535,6 +1606,30 @@ z-index: -999;
   .presentation{
     top: -18%;
   }
+}
+@media only screen and (max-width:396px) {
+  form{
+    height: 45%;
+  }
+  #projects{
+    height: 500vh;
+  }
+  .tags>a{
+    font-size: 22px;
+  }
+  #meee{
+    width: 30%;
+  }
+  .my-info{
+    left: -180%;
+  }
+  .secondary{
+    top: 180px;
+  }
+  #mee{
+    top: 150px;
+  }
+
 }
 /* galaxy s5 */
 @media only screen and (max-width:375px) {

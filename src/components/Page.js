@@ -166,6 +166,8 @@ render(){
                   Hi, My name is
                Diana Ponce
                  </h2>
+                 <p className='title intro-se'>Full-Stack Developer</p>
+
                  <svg id="mee"width="1532"  viewBox="0 0 1532 747" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="undraw_visualization_c2ps 1" clipPath="url(#clip0)" filter="url(#filter0_d)">
 <g id="undraw_hacker_mind_6y85 1 1">
@@ -463,7 +465,6 @@ render(){
 </svg>
 
 
-                 <p className='title intro-se'>Full-Stack Developer</p>
                  {/* <a href = {Pdf} >resume</a> */}
                  <button className='secondary' onClick={this.onResumeClick}>
       Resume
@@ -476,7 +477,7 @@ render(){
 <section id='about' className="section">
   <h1 id='descrip'>A little bit about me..</h1>
  <div  className='allstacks'>
-<h1>My Skills</h1>
+<h1 className='m-s'>My Skills</h1>
 <div className='ul'>
 <p className='p'>JavaScript</p>
 <p className='p'>Ruby</p>
