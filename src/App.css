@@ -1629,6 +1629,17 @@ z-index: -999;
   #mee{
     top: 150px;
   }
+  .intro{
+    top:100px;
+    left:-60px
+
+  }
+  .intro-se{
+    top:100px;
+    left:-50px
+
+  }
+
 
 }
 /* galaxy s5 */
