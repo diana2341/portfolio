@@ -323,8 +323,9 @@ left: -150%;
   position: relative;
   left: 2%;
   top: -159px;
+  text-align: center;
   
-  z-index: -999;
+  /* z-index: -999; */
  cursor: pointer; ;
  outline:none;
 
@@ -383,7 +384,6 @@ left: -150%;
   position: relative;
   max-width:85%;
   max-height:85%;
-  /* bottom: 30vh; */
 
 }
 
@@ -731,7 +731,6 @@ top: 30%;
   position: relative;
   width: 75%;
   height: 71%;
-  /* height: 100vh; */
   left: 25.1%;
   bottom: 1%;
 }
@@ -801,15 +800,12 @@ animation: down 2s linear infinite;
     left: 10px;
 
   }
+  .secondary{
+    z-index: 999;
+  }
 }
 @media only screen and (max-width:1024px) {
-  .section{
-    width: 100%;
-    height: 1300px;
-  }
-  /* #home{
-    height: 100vh;
-  } */
+
 
   #meee{
     left: -60%;
@@ -850,7 +846,7 @@ animation: down 2s linear infinite;
     left: 25px;
     width: 20%;
     font-size: 40px;
-    /* z-index: -999; */
+    z-index: 999;
   }
   .arrow{
     display: none;
@@ -922,11 +918,9 @@ display: none  }
 .presentation{
   top: -4%;
 }
-#projects{
-  height: 220vh;
-}
+
 .social{
-  top: 23%;
+  top: 33%;
   left: -60%;
   grid-template-columns: auto auto auto auto;
   column-gap: 50px;
@@ -941,21 +935,68 @@ form{
   left: 5%;
 }
 }
+@media only screen and (max-width:1061px) {
+  .my-info{
+    top: -70px;
+     
+  }
+  #descrip{
+visibility: hidden;
+  }
+  .title2{
+    top: -50px;
+  }
+  .secondary{
+   
+    z-index: 999;
+  }
+}
+@media only screen and (max-width:1024px) {
 
+#home{
+  height: 600px;
+}
+#about{
+  height: 1100px;
+}
+#projects{
+  height: 3100px;
+}
+#contact{
+  height: 900px;
+}
+.allstacks{
+  top: 390px;
+}
+.secondary{
+   
+  z-index: 999;
+}
+
+}
 @media only screen and (max-width:1021px) {
   .arrow{
 display: none;  }
 .tags{
   font-size: 8px;
+
+}
+/* .box{
+  top: -400px;
+} */
+#home{
+  height: 600px;
+}
+#projects{
+  height: 3000px;
+}
+.secondary{
+   
+  z-index: 999;
 }
 }
 @media only screen and (max-width:1017px) {
-  #projects{
-    height: 500vh;
-  }
-  #home{
-    height: 100vh;
-  }
+
   .box{
     top: -80px;
   }
@@ -971,9 +1012,7 @@ display: none;  }
    }
     
     
-#projects{
-  height: 385vh;
-}
+
 .presentation{
   top: -17%;
 }
@@ -996,16 +1035,29 @@ display: none;  }
   left: 15%;
 }
 
-#projects{
-  height: 540vh;
-}
+
 .presentation{
   top: -5%;
 }
 .tags{
   font-size: 17px;
 }
-
+#contact{
+  height: 600px;
+}
+.social{
+  top: 260px;
+}
+.box{
+  top: 10px;
+}
+#meee,.my-info{
+  top: -200px;
+}
+.secondary{
+   
+  z-index: 999;
+}
 }
 
 
@@ -1014,7 +1066,7 @@ display: none;  }
  
 @media only screen and (max-width:985px) {
 #home{
-  height: 100vh;
+  height: 600px;
 }
 #mee{
   width: 700px;
@@ -1036,17 +1088,21 @@ display: none;  }
 }
 #meee{
   left: -140px;
-  top: -20%;
+  top: -10%;
 }
 .my-info{
-  top: -200px;
+  top: -100px;
   width: 400px;
   left: -70%;
   font-size: 25px;
 }
 .allstacks{
-  top: 10%;
+  top: 30%;
   left: 35%;
+}
+.secondary{
+   
+  z-index: 999;
 }
 
 .p{
@@ -1059,6 +1115,12 @@ form{
 .presentation{
   top: -4%;
 }
+.box{
+  top: -30px;
+}
+.secondary{
+  top: -50px;
+}
 }
   @media only screen and (max-width: 976px) {
     .title{
@@ -1069,6 +1131,7 @@ form{
       position: relative;
       left: 3%;
       top: -55px;
+      z-index: 999;
     }
     .arrow{
       left: 43%;
@@ -1080,6 +1143,18 @@ form{
     }
     .tags{
       left: 180px;
+    }
+   
+    #projects{
+      height: 3000px;
+    }
+    #contact{
+      height: 700px;
+    }
+    form{
+      top: -30px;
+    }.social{
+      top: 290px;
     }
   }
 
@@ -1102,18 +1177,22 @@ form{
     .tags{
       left: 95px;
     }
+    
+.secondary{
+  z-index: 999;
+}
   }
 @media only screen and (max-width:768px) {
   .tags{
     font-size: 36px;
     left: 20px;
   }
-  #projects{
-    height: 290vh;
-  
+  .secondary{
+    z-index: 999;
   }
+ 
   .presentation{
-    top: -1%;
+    top: -5%;
   
   }
   .title2{
@@ -1149,15 +1228,29 @@ form{
   .allstacks{
     top: 30%;
   }
-  } 
-  @media only screen and (max-width: 764px) {
-    #projects{
-      height: 450vh;
-    }
+  #projects{
+    height: 2900px;
   }
+  } 
+ 
   @media only screen and (max-width: 664px) {
     .my-info{
       left: -230px;
+    }
+    #about{
+      height:900px;
+    }
+    #projects{
+      height: 2800px;
+    }
+    form{
+      top: 10px;
+    }
+    .social{
+      top: 330px;
+    }
+    .secondary{
+      z-index: 999;
     }
   }
 @media only screen and (max-width: 600px) {
@@ -1182,7 +1275,7 @@ form{
 }
 
 #projects{
-  height: 640vh;
+  height: 3700px;
 
   
 }
@@ -1286,9 +1379,9 @@ form{
     row-gap: 20%;
     
   }
-  .title2{
-    left: 35%;
-  }
+ .title2{
+visibility: hidden; }
+ 
 }
 
 
@@ -1297,6 +1390,13 @@ form{
 @media only screen and (max-width: 608px) {
   .title{
     left: 60px;
+  }
+  .title2{
+    top: -90px;
+    left: 15px;
+  }
+  .secondary{
+    z-index: 999;
   }
 }
 
@@ -1310,6 +1410,10 @@ form{
   }
   .secondary{
     top: 10px;
+    z-index: 999;
+  }
+  .title2{
+    left: 40%;
   }
 }
 @media only screen and (max-width: 598px) {
@@ -1324,9 +1428,13 @@ form{
   }
   .secondary{
     top: -50px;
+    z-index: 999;
   }
 }
 @media only screen and (max-width: 582px) {
+  .title2{
+  visibility:visible;
+  }
   .box{
     top: 10px;
   }
@@ -1340,20 +1448,64 @@ form{
   }
   .secondary{
     top: -170px;
+    z-index: 999;
   }
   .social{
     left: -400px;
   }
-  .profile-pic{
-    display: none
+  #meee{
+    /* display: none */
+    top: -320px;
+    left: -45em;
+  }
+  .my-info{
+    top: 80px;
+    left: -150px;
   }
   .allstacks{
-    left: 190px;
+    left: 250px;
+    top: 420px;
+  }
+  #home{
+    height: 700px;
+  }
+  #about{
+    height: 1100px;
   }
 }
+@media only screen and (max-width:479px) {
+  #projects{
+    height: 3500px;
+  }
+
+  .title2{
+    visibility: visible;
+  }
+  .presentation{
+    top: -560px;
+  }
+  .picturep{
+    left: -70px;
+  }
+  .secondary{
+    z-index: 999;
+  }
+}
+
+
 @media only screen and (max-width:474px) {
   .secondary{
     top: -35px;
+  }
+  /*  */
+  .presentation{
+    top: -650px;
+  }
+  .picturep{
+    left: -85px;
+  }
+  .secondary{
+    z-index: 999;
   }
 }
 /* surface duo */
@@ -1390,18 +1542,18 @@ left: 10px;
   }
   form{
     top: -10%;
-    height: 50%;
+    height: 70%;
   }
   #contact{
-    height:130vh
+    height:600px
   }
   .social{
-    top:20%;
+    top:30%;
     left: -350px;
     
   }
  #home{
-   height: 100vh;
+   height: 700px;
  }
  #mee{
    top: 15%;
@@ -1412,9 +1564,10 @@ left: 10px;
    width: 150px;
    left: 10px;
    top: -190px;
+   z-index: 999;
  }
  #about{
-   height: 250vh;
+   height: 600px;
  }
  .my-info{
    top: 15px;
@@ -1422,13 +1575,13 @@ left: 10px;
    left: -90px;
  }
  #about{
-   height: 150vh;
+   height: 1050px;
  }
  .allstacks{
    left: 55%;
  }
  #projects{
-   height:550vh
+   height:3500px
  }
 
 .presentation{
@@ -1444,6 +1597,9 @@ left: 10px;
 @media only screen and (max-width:416px) {
   .my-info{
     left: -110px;
+  }
+  .secondary{
+    z-index: 999;
   }
 }
 /* galaxy fold */
@@ -1462,7 +1618,7 @@ left: 10px;
   }
   
   #home{
-    height: 100vh;
+    height: 700px;
   }
   #meee{
     left: -60%;
@@ -1489,6 +1645,7 @@ left: 10px;
     cursor: pointer;
     width: 150px;
     left: -50px;
+    z-index: 999;
   }
   .allstacks{
     top: 27%;
@@ -1498,11 +1655,9 @@ left: 10px;
     font-size: 15px;
   }
   #about{
-    height: 130vh;
+    height: 800px;
   }
-  /* #projects{
-    height: 430vh;
-  } */
+ 
   .presentation{
     top: -17%;
   }
@@ -1510,12 +1665,10 @@ left: 10px;
     left: -20%;
   }
   form{
-    height: 50%;
+    height: 65%;
     top: -3%;
   }
-  /* #contact{
-    height: 100vh;
-  } */
+  
   .tags>a{
     font-size: 22px;
     
@@ -1524,6 +1677,10 @@ left: 10px;
     left: 10px;
 
   }
+  #projects{
+    height: 3200px;
+  }
+  
 } 
 
 
@@ -1557,7 +1714,7 @@ left: 10px;
   
   }
   #about{
-    height: 120vh;
+    height: 800px;
   }
   #meee{
     top: -27%;
@@ -1574,6 +1731,7 @@ left: 10px;
     font-size: 26px;
     top: 80px;
     left: 60px;
+    z-index: 999;
   }
   .picturep{
     left: -55px;
@@ -1583,7 +1741,7 @@ left: 10px;
   }
  
   #contact{
-    height: 100vh;
+    height: 600px;
   }
 
 
@@ -1593,11 +1751,17 @@ left: 10px;
   .presentation{
     top: -18%;
   }
+  #projects{
+    height: 3090px;
+  }
 }
 @media only screen and (max-width:396px) {
   /*  */
+  .box{
+    top: -80px;
+  }
   #projects{
-    height: 500vh;
+    height: 3090px;
   }
   .tags>a{
     font-size: 22px;
@@ -1610,6 +1774,7 @@ left: 10px;
   }
   .secondary{
     top: 180px;
+    z-index: 999;
   }
   #mee{
     top: 150px;
@@ -1623,6 +1788,9 @@ left: 10px;
     top:100px;
     left:-50px
 
+  }
+  .presentation{
+top: -500px;
   }
 
 
@@ -1660,12 +1828,20 @@ left: 10px;
  
  .secondary{
    left: 30px;
+   z-index: 999;
  }
  .box{
    top: -100px;
  }
  .allstacks{
    left: 90px;
+ }
+
+ .title3{
+   top: -5px;
+ }
+ #projects{
+   height:3090px;
  }
 }
 /* motog4 */
@@ -1710,6 +1886,9 @@ font-size: 14px
   left: -80%;
   border-radius: 0;
 }
+.secondary{
+  z-index: 999;
+}
 
 }
 @media only screen and (max-width:360px) {
@@ -1748,11 +1927,11 @@ font-size: 14px
     left: 27%;
   }
   #about{
-    height: 140vh;
+    height: 900px;
 
   }
   #projects{
-    height: 480vh;
+    height: 3000px;
 
   }
   .presentation{
@@ -1762,7 +1941,7 @@ font-size: 14px
    left: -25%;
  }
  #contact{
-   height: 100vh;
+   height: 600px;
  }
  .tags>a{
    font-size: 20px;
@@ -1774,12 +1953,14 @@ font-size: 14px
   top: 90px;
   font-size: 25px;
   height: 40px;
-  left: 30px;
+  left: 50px;
+  z-index: 999;
 
 }
  }
 
  @media only screen and (max-width:320px) {
+ 
    .tags>a{
      font-size: 17px;
    }
@@ -1795,7 +1976,7 @@ font-size: 14px
 font-size: 10px;
    }
    #projects{
-     height: 500vh;
+     height: 3000px;
    }
    .intro{
      left: -40px;
@@ -1809,6 +1990,10 @@ font-size: 10px;
    }
    .secondary{
      top: 40px;
+     z-index: 999;
+   }
+   .btn{
+top: -5px;
    }
 
  }
@@ -1849,4 +2034,17 @@ font-size: 10px;
   font-size: 14px;
 
 }
- }
+.secondary{
+  z-index: 999;
+} }
+ /* @media only screen and (max-width: 168px) {
+   #projects{
+     height: 400vh;
+   }
+   #home{
+     height: 120vh;
+   }
+   #about{
+     height: 120vh;
+   }
+ } */
