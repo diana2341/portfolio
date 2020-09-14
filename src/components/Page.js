@@ -107,6 +107,10 @@ export default class Page extends Component{
      onResumeClick() {
       window.open(Pdf);
     }
+    git=()=>{
+      window.location.href = "http://www.w3schools.com";
+console.log('clicked')
+    }
     
     
 render(){
@@ -117,7 +121,7 @@ render(){
    
     return(
         <>
-                <GithubCorner id='git'bannerColor="#2a6977" href='https://github.com/diana2341/portfolio' />
+                <GithubCorner onClick={this.git}id='git'bannerColor="#2a6977" href='https://github.com/diana2341/portfolio' />
               <div className='nav'>
                 <div className='tags'>
                 <a href='#home'>Home</a>
