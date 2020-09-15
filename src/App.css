@@ -1801,7 +1801,9 @@ top: -500px;
 }
 /* galaxy s5 */
 @media only screen and (max-width:375px) {
- 
+ .p{
+   font-size: 12px;
+ }
   .presentation{
     top: -20%;
   }
@@ -1822,7 +1824,7 @@ top: -500px;
  }
  
  .my-info{
-   font-size: 18px;
+   font-size: 15px;
    top: 25px;
    left: -220px;
  }
