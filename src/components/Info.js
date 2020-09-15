@@ -47,7 +47,7 @@ const info = [
       description:"An educational site  that raises awareness about several animal species endangered due to poaching. Reasons for poaching are explained to the user. They can also view recent news about the animal and are able to join a community to discuss  the topic with others.",
       gitLink:'https://github.com/diana2341/why-poaching-front',
       youtube:'https://www.youtube.com/watch?v=xTjHOjz2xGA&t=13s',
-      deploy:'https://endangered-lives.herokuapp.com/'
+    //   deploy:'https://endangered-lives.herokuapp.com/'
       
     },
     {
@@ -63,7 +63,7 @@ const info = [
         description:'A sound machine used to reduce stress, increase concentration or enable the ability to sleep better with ambient noises. Users can make a mix of ambient noises and listen to others creations.',
         gitLink:'https://github.com/diana2341/illucid-beats-front',
         youtube:'https://www.youtube.com/watch?v=pOq3eoo0Mjs',
-        deploy:'https://illucid--beats.herokuapp.com/'
+        // deploy:'https://illucid--beats.herokuapp.com/'
     },
     {
         id:3,
