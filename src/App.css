@@ -794,7 +794,14 @@ animation: down 2s linear infinite;
   top: 200px;
 }
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
-
+@media only screen and (max-width:2265px) {
+  .intro{
+    top: 180px;
+  }
+  #projects{
+    height: 3000px;
+  }
+}
 @media only screen and (max-width:1034px) {
   .allstacks{
     top: 300px;
