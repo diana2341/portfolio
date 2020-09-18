@@ -802,6 +802,11 @@ animation: down 2s linear infinite;
     height: 3000px;
   }
 }
+@media only screen and (max-width:1189px) {
+  #projects{
+    height: 2000px;
+  }
+}
 @media only screen and (max-width:1034px) {
   .allstacks{
     top: 300px;
