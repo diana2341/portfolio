@@ -470,7 +470,7 @@ render(){
 
 
                  {/* <a href = {Pdf} >resume</a> */}
-                 <a className='secondary' href='https://docs.google.com/document/d/1gDBoDUd47Jrp2NzQ3lFFN9Qa4pvid-MKOZ_KBmJph0I/edit?usp=sharing'>
+                 <a className='secondary' href='https://drive.google.com/file/d/1OplJ5fdaGR1doApLFS8AYn8eNCSUUxeU/view?usp=sharing'>
       Resume
    </a>
   <a href='#about'><div className='arrow'></div></a> 
