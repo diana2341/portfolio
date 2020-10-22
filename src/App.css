@@ -19,14 +19,19 @@
   left:20%
 }
 html{
-  scroll-behavior: smooth;
+  overflow-x: auto;
+overflow: hidden;
 }
 body {
   color: white;
   /* background: linear-gradient(141deg, white 0%, grey 51%, rgb(46, 45, 45) 75%); */
   background: #358597;
-  
- 
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+
+
+
   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
   /* background-image: url("https://www.transparenttextures.com/patterns/60-lines.png"); */
 
@@ -52,40 +57,31 @@ a:hover{
   border-radius: 50px;
   background: #2e7585;
   text-align: center;
-  width: 145%;
-  margin: 2.5px;
+  width: 130%;
+  margin: 4.5px;
 
 }
 .ul{
-  display: grid;
-  grid-template-columns: auto auto auto ;
-  position: relative;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-weight: normal; */
-  font-size: 16px;
-  grid-column-gap: 55px;
-  grid-row-gap: 7px;
-
-
-
-}
-
-
-
-
-
-.section {
-  align-items: center;
-  bottom: 0;
+ 
   display: flex;
-  justify-content: center;
-  height: 800px;
-  /* width: 1400px; */
-  width: 100vw;
+  flex-wrap: wrap;
+  position: relative;
 
-  /* z-index: -1; */
-  overflow: hidden;
+  font-size: 16px;
+
+
 }
+.ul>span{
+  padding: 18px;
+}
+
+
+
+
+
+
+
+
 
 #me{
   position: relative;
@@ -98,27 +94,23 @@ a:hover{
 
 }
 @import url('https://fonts.googleapis.com/css?family=Bilbo');
-.title,.intro{
+.title{
   position: relative;
   /* z-index: 9; */
-  left:-3%;
-  top:-4em;
+  /* left:-3%; */
+  top:2em;
   /* max-width: 50%; */
   font-size: 5vw;
   /* font-family: 'Gruppo';font-size: 50px; */
   font-family: 'Bilbo';
   font-weight: 600;
+  display: grid;
 
 }
 #code{
   color: #2e7585;
 }
-.intro{
-  position: relative;
-  /* z-index: 9; */
-  left:-40px;
-  top:3em;
-}
+
 .about-content{
   position: relative;
   max-width: 50vh;
@@ -136,14 +128,7 @@ a:hover{
 
 }
 
-#projects{
-    /* overflow: scroll; */
-  /* height: 150vh;
-  width: 100%; */
-  
-  width: 100%;
-  height: 2000px;
-}
+
 .presentation{
   position: relative;
   top: -5%;
@@ -195,10 +180,10 @@ a:hover{
 left: -150%;
 }
 .my-info{
-  width: 90%;
+  width: 38.5%;
   position: relative;
-  top: -35px;
-  left: 15%;
+  top: -15px;
+  left: 55%;
   z-index: 1;
   font-weight: 600;
 
@@ -239,6 +224,8 @@ left: -150%;
   background: #2e7585;
   overflow: hidden;
   padding-top: 195px;
+  z-index: 999;
+  
 }
 
 .sidenav a {
@@ -432,7 +419,8 @@ form{
   box-shadow: -2px 7px 40px 2px rgba(18, 31, 23, 0.356);
   color: #8c36dd;
   position: relative;
-  left: 5%;
+  top: 70px;
+  left: 30%;
 }
 /* envelope */
 .envWrapper{
@@ -513,6 +501,9 @@ left: 1%;
   transform:translate(-50%,-50%);
   color:#798992;
 }
+#me-info{
+  position: relative;
+}
 .mail:hover .cover::before{
   transform: rotateX(180deg);
   transition:all 1s ease;
@@ -586,17 +577,17 @@ width: 150%;
 }
 #meee{
   position: relative;
-  right:60% ;
   width: 18%;
   /* position: relative; */
-  top: 3%;
+  top: -180px;
   z-index: -999;
   border-radius: 60px;
+  left: 20%;
 }
 #descrip{
   position: relative;
   left: 40%;
-  top: -34%;
+  top: 60px;
   width: 150%;
   font-family: 'Gruppo';
   font-size: 30px;
@@ -658,12 +649,12 @@ width: 150%;
 
 .allstacks{
   position: relative;
-  left: 30%;
+  left: 55%;
   font-size: 15px;
   z-index: 999;
   font-family: 'Gruppo';font-size: 20px;
 font-weight: 600;
-top:30%;
+top:450px;
 }
 .title2{
   position: relative;
@@ -677,21 +668,13 @@ top:30%;
 
 
 }
-.allstacks ul li{
-  margin-right: 40px;
 
-}
-.allstacks h1{
+.allstacks>h1{
   position: relative;
   text-decoration: underline;
   font-weight: 600;
-left: 35%;
+left: 10%;
 top: -30px;
-
-}
-ul {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
 
 }
 .card{
@@ -786,1283 +769,417 @@ animation: down 2s linear infinite;
   }
 }
 .e-l{
-  width: 0;
 }
-.intro-se{
-  position: relative;
-  left: -50px;
-  top: 200px;
-}
+
 /* phoneeeeeeeeeeeeeeeeeeeeeee */
-@media only screen and (max-width:2265px) {
-  .intro{
-    top: 180px;
-  }
-  #projects{
-    height: 3000px;
-  }
-}
-@media only screen and (max-width:1440px) {
-  #projects{
-    height: 2000px;
-  }
-}
-@media only screen and (max-width:1034px) {
-  .allstacks{
-    top: 300px;
-  }
-  .intro-se,.intro{
-    left: 10px;
 
-  }
-  .secondary{
-    z-index: 1;
-  }
-}
 @media only screen and (max-width:1024px) {
+/* home */
+.box{
+  top: 185px;
+  left: 1px;
+}
+.title{
+  left: 100px;
+  font-size: 60px;
+}
+#mee{
+  left: 23px;
+}
 
+.secondary{
+   top: 200px;
+  z-index: 1;
+  left: 200px;
+  font-size: 45px;
+  width: 30%;
+  
+}
 
-  #meee{
-    left: -60%;
-  }
-  .tags{
-    font-size: 20px;
-    left: 10%;
-  }
-  .intro-se{
-    font-size: 60px;
-    /* top: 1px; */
-    /* left: -100px; */
-
-  }
-  form{
-    top: -10%;
-  }
-  .social{
-    top:20%
-  }
-  .icon{
-    display: none;
-  }
-  .intro{
-    font-size: 60px;
-  left: -10%;
-  }
-  .box{
-    top: -50px;
-  }
-  #mee{
-    width: 750px;
-    left: 15%;
-    top: 100px;
-  }
-  .secondary{
-    top: 35px;
-    left: 25px;
-    width: 20%;
-    font-size: 40px;
-    z-index: 1;
-  }
-  .arrow{
-    display: none;
-  }
-  .nav{
-    position: relative;
-      overflow: hidden;
-    background-color: #245a66;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 999;
-  }
-  .nav a{
-    font-size: 35px;
-  }
-  .tags{
-    position: relative;
-    font-size: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 20px;
-    padding: 30px;
-    left: 15%;
-    font-family: 'Gruppo';
-    font-weight: 600;
-    column-gap: 50px;
-  }
-  .box-nav,.sidenav{
-    display: none;
-  }
-  #meee{
-    width: 30%;
-    top: -5%;
-  }
-  .my-info{
-    width: 200%;
-    font-size:30px ;
-    z-index: -999;
-  }
-  #descrip{
-display: none  }
-.p{
-  font-size: 25px;
+.sidenav{
+  display: none;
 }
-.allstacks{
-  column-gap: 60px;
-  top: 35%;
-  left: 25%;
-  z-index: -999;
-}
-.presentation{
-  top: 1%;
-}
-.title2{
-  top: -60px;
-  left: 40%;
-}
-.body{
-  font-size: 20px;
-  top: -70%;
-}
-.picturep{
+.nav{
   position: relative;
-  width: 140%;
-  left: -160px;
+    overflow: hidden;
+  background-color: #245a66;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 999;
 }
-.presentation{
-  top: -4%;
+.nav a{
+  font-size: 35px;
 }
-
-.social{
-  top: 33%;
-  left: -60%;
+.tags{
+  position: relative;
+  font-size: 50px;
+  display: grid;
   grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  padding: 30px;
+  left: 15%;
+  font-family: 'Gruppo';
+  font-weight: 600;
   column-gap: 50px;
 }
-form{
-  width:90%;
-  
+.box-nav,.sidenav{
+  display: none;
 }
-.form-group{
-  position: relative;
-  width: 90%;
-  left: 5%;
-}
-}
-@media only screen and (max-width:1061px) {
-  .my-info{
-    top: -70px;
-     
-  }
-  #descrip{
-visibility: hidden;
-  }
-  .title2{
-    top: -50px;
-  }
-  .secondary{
-   
-    z-index: 1;
-  }
-}
-@media only screen and (max-width:1024px) {
+/* home end plus nav */
 
-#home{
-  height: 600px;
-}
-#about{
-  height: 1100px;
-}
-#projects{
-  height: 3100px;
-}
-#contact{
-  height: 900px;
+
+/* about */
+#meee{
+  position: relative;
+  width: 35%;
+  top: -55rem;
+  left: 10%;
 }
 .allstacks{
-  top: 390px;
-}
-.secondary{
-   
-  z-index: 1;
-}
-
-}
-@media only screen and (max-width:1021px) {
-  .arrow{
-display: none;  }
-.tags{
-  font-size: 8px;
-
-}
-/* .box{
-  top: -400px;
-} */
-#home{
-  height: 600px;
-}
-#projects{
-  height: 3000px;
-}
-.secondary{
-   
-  z-index: 1;
-}
-}
-@media only screen and (max-width:1017px) {
-
-  .box{
-    top: -80px;
-  }
-}
-
-/* iohone 6 */
-
-/* iphone 5 */
-@media only screen and (max-width:1008px) {
-  
-  .arrow{
-    display: none; 
-   }
-    
-    
-
-.presentation{
-  top: -17%;
-}
-.intro{
-  top: 190px;
-  left: -50px;
-}
-.intro-se{
-  top: 190px;
-  left: -50px;
-
-}
-#mee{
-  top: 30px;
-}
-.secondary{
-  top: -40px;
-}
-.tags{
+  position: relative;
+  top: 950px;
   left: 15%;
 }
-
-
-.presentation{
-  top: -5%;
-}
-.tags{
-  font-size: 17px;
-}
-#contact{
-  height: 600px;
-}
-.social{
-  top: 260px;
-}
-.box{
-  top: 10px;
-}
-#meee,.my-info{
-  top: -200px;
-}
-.secondary{
-   
-  z-index: 1;
-}
-}
-
-
-
-/* ipad pro */
- 
-@media only screen and (max-width:985px) {
-#home{
-  height: 600px;
-}
-#mee{
-  width: 700px;
-  left: 10%;
-  top: 80px;
-}
-.secondary{
-  top: 140px;
+.p{
   font-size: 25px;
-}
-.intro{
-  top: 190px;
-  left: -10%;
-}
-.intro-se{
-  top:190px;
-  left: -10%;
 
 }
-#meee{
-  left: -140px;
-  top: -10%;
+.m-s{
+  font-size: 35px;
+  left: 10px;
 }
 .my-info{
-  top: -100px;
-  width: 400px;
-  left: -70%;
-  font-size: 25px;
+font-size: 30px;
+z-index: 1;
 }
-.allstacks{
-  top: 30%;
+#descrip{
+  top: 150px;
+  font-size: 40px;
   left: 35%;
-}
-.secondary{
-   
-  z-index: 1;
-}
 
-.p{
-  font-size: 23px;
+}
+.ul>span{
+  padding: 30px;
+}
+/* end about */
 
+
+/* start projectssss */
+.card{
+  width: 100%;
+  left: -15%;
+}
+.body{
+  width: 100%;
+font-size: 30px;
+  left: 0;
+  top: 15px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.name-project{
+  font-size: 40px;
+  text-decoration:underline  ;
+  font-weight: 800;
+
+}
+.title2{
+  top: 120px;
+  left: 40%;
+  font-size: 50px;
 }
 form{
-  top:-20%
+  width: 95%;
+top:400px ;
+left: 3%;;
 }
-.presentation{
-  top: -4%;
-}
-.box{
-  top: -30px;
-}
-.secondary{
-  top: -50px;
+.form-group{
+  width: 93%;
 }
 }
-  @media only screen and (max-width: 976px) {
-    .title{
-      left: 25px;
-  
-    }
-    .secondary{
-      position: relative;
-      left: 3%;
-      top: -55px;
-      z-index: 1;
-    }
-    .arrow{
-      left: 43%;
-      animation: down 2s linear infinite;
-  
-    }
-    .box{
-      left: 55px;
-    }
-    .tags{
-      left: 180px;
-    }
-   
-    #projects{
-      height: 3000px;
-    }
-    #contact{
-      height: 700px;
-    }
-    form{
-      top: -30px;
-    }.social{
-      top: 290px;
-    }
-  }
 
-
-  @keyframes down{
-    0%{
-      top: 42px;
-  
-    }
-    100%{
-      top: 70px;
-  
-    }
-  }
-  @media only screen and (max-width:824px) {
-    .tags>a{
-      font-size: 26px;
-
-    }
-    .tags{
-      left: 95px;
-    }
-    
-.secondary{
-  z-index: 1;
-}
-  }
-@media only screen and (max-width:768px) {
-  .tags{
-    font-size: 36px;
-    left: 20px;
-  }
-  .secondary{
-    z-index: 1;
-  }
- 
-  .presentation{
-    top: -5%;
-  
-  }
-  .title2{
-    position: relative;
-    top: -115px;
-  }
-  .body{
-    width: 100%;
-    left: 95%;
-  }
-  .picturep{
-    position: relative;
-    top: -50px;
-  }
-  .intro{
-    top: 190px;
-    left: -30px;
-  }
-  .intro-se{
-    left: -30px;
-  }
-  .secondary{
-    top:10%
-  
-  }
-  #meee{
-    left: -30%;
-    top: -15%;
-  }
-  .my-info{
-    top: -160px;
-  }
-  .allstacks{
-    top: 30%;
-  }
-  #projects{
-    height: 2900px;
-  }
-  } 
- 
-  @media only screen and (max-width: 664px) {
-    .my-info{
-      left: -230px;
-    }
-    #about{
-      height:900px;
-    }
-    #projects{
-      height: 2800px;
-    }
-    form{
-      top: 10px;
-    }
-    .social{
-      top: 330px;
-    }
-    .secondary{
-      z-index: 1;
-    }
-  }
-@media only screen and (max-width: 600px) {
- 
-    .icon,.me{
-      display: none;
-    }
-    
-  
- .allstacks{
-   left: 250px;
- }
-  
- 
-  .job{
-    display: none;
-  }
-
-
-.title3{
-  left: 63%;
-}
-
-#projects{
-  height: 3700px;
-
-  
-}
-.presentation{
-  top: -68em;
-
-}
-.link{
-  display: none;
-  color: #1d4e58;
-}
-
-  #git{
-    display: none;
-  }
-
-  .secondary{
-    position: relative;
-    top: -50px;
-    left: 60px;
-    width: 20%;
-    height: 50px;
-    z-index:1;
-  }
-  .intro{
-    position: relative;
-    font-size: 45px;
-
- }
- #mee{
-   width: 115%;
-   left: -15%;
- }
- .intro-se{
-  
-   font-size: 45px;
-
-
- }
-
-  
-  .sidenav {
-    /* overflow: hidden;
-    background-color: #245a66;
-    position: fixed;
-    top: 0;
-       width: 100%;
-    height: 10px;
-    z-index: 999; */
-    display: none;
-  }
-
-  
-  .tags{
-    position: relative;
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 20px;
-    padding: 20px;
-    left: 10%;
-    font-family: 'Gruppo';
-    font-weight: 600;
-  }
- #descrip{
-   visibility: hidden;
- }
-  
-
-
- /*  */
- .body{
-  position: relative;
-  left: 0%;
-  width:100% ;
-  font-family: 'Gruppo';
-  font-size: 15px;
-  top: 0%;
-  background-color: rgba(180, 175, 175, 0.274);
-  border-radius: 10px;
-  margin-bottom: none;
-  
-
-}
-.card{
-  background-color: transparent;
-  /* box-shadow: 10px 12px 21px -6px rgba(0,0,0,0.75); */
-  border: transparent;
-  border-radius: 10px;
-  width: 44%;
-  top: 10%;
-  left: 4%;
-  }
-  .column{
-    position: relative;
-    left: 0%;
-    display: grid;
-    grid-template-columns: auto   ;
-    width: 200%;
-    top: 0em;
-    row-gap: 20%;
-    
-  }
- .title2{
-visibility: hidden; }
- 
-}
-
-
-
-/*  */
-@media only screen and (max-width: 608px) {
-  .title{
-    left: 60px;
-  }
-  .title2{
-    top: -90px;
-    left: 15px;
-  }
-  .secondary{
-    z-index: 1;
-  }
-}
-
-@media only screen and (max-width: 598px) {
-  .title{
-    left: -80px;
-  }
-  .intro{
-    top: 90px;
-    left: -100px;
-  }
-  .secondary{
-    top: 10px;
-    z-index: 1;
-  }
-  .title2{
-    left: 40%;
-  }
-}
-@media only screen and (max-width: 598px) {
-  .intro{
-    left: -10px;
-    top: 190px;
-
-  }
-  .intro-se{
-    left: -10px;
-    top: 190px;
-  }
-  .secondary{
-    top: -50px;
-    z-index: 1;
-  }
-}
-@media only screen and (max-width: 582px) {
-  .title2{
-  visibility:visible;
-  }
-  .box{
-    top: 10px;
-  }
-  .intro{
-    left: -10px;
-
-  }
-  .intro-se{
-    left: -10px;
-    top: 80px;
-  }
-  .secondary{
-    top: -170px;
-    z-index: 1;
-  }
-  .social{
-    left: -400px;
-  }
-  #meee{
-    /* display: none */
-    top: -320px;
-    left: -45em;
-  }
-  .my-info{
-    top: 80px;
-    left: -150px;
-  }
-  .allstacks{
-    left: 250px;
-    top: 420px;
-  }
-  #home{
-    height: 700px;
-  }
-  #about{
-    height: 1100px;
-  }
-}
-@media only screen and (max-width:479px) {
-  #projects{
-    height: 3500px;
-  }
-
-  .title2{
-    visibility: visible;
-  }
-  .presentation{
-    top: -560px;
-  }
-  .picturep{
-    left: -70px;
-  }
-  .secondary{
-    z-index: 1;
-  }
-}
-
-
-@media only screen and (max-width:474px) {
-  .secondary{
-    top: -35px;
-  }
-  /*  */
-  .presentation{
-    top: -650px;
-  }
-  .picturep{
-    left: -85px;
-  }
-  .secondary{
-    z-index: 1;
-  }
-}
-/* surface duo */
- @media only screen and (max-width:450px) {
-   .profile-pic{
-display: inline; 
-left: 10px; 
- }
-  #meee{
-    left: -80%;
-    top: -28%;
-  }
-  /* .my-info{
-    width: 400px;
-    font-size: 20px;
-    left: -300px;
-    top: -95px;
-
-  } */
-  .tags>a{
-    font-size: 23px;
-  }
-
-  .p{
-    font-size: 15px;
-  }
-  .intro{
-    top: 15px;
-    left: -50px;
-  }
-  .intro-se{
-    top: 15px;
-    left: -50px;
-  }
-  form{
-    top: -10%;
-    height: 70%;
-  }
-  #contact{
-    height:600px
-  }
-  .social{
-    top:30%;
-    left: -350px;
-    
-  }
- #home{
-   height: 700px;
- }
- #mee{
-   top: 15%;
-   /* left: 10px; */
- }
- .secondary{
-   font-size: 25px;
-   width: 150px;
-   left: 10px;
-   top: -190px;
-   z-index: 1;
- }
- #about{
-   height: 600px;
- }
- .my-info{
-   top: 15px;
-   font-size: 20px;
-   left: -90px;
- }
- #about{
-   height: 1050px;
- }
- .allstacks{
-   left: 55%;
- }
- #projects{
-   height:3500px
- }
-
-.presentation{
-  top: -18%;
-}
-.picturep{
-  left: -80px;
-}
-#env{
-  top: -250px;
-}
-} 
-@media only screen and (max-width:416px) {
-  .my-info{
-    left: -110px;
-  }
-  .secondary{
-    z-index: 1;
-  }
-}
-/* galaxy fold */
- @media only screen and (max-width:414px) {
-
-  .social{
-    left: -85%;
-    top: 40%;
-  }
- 
-  .title2{
-    left: 30%;
-  }
-  .intro-se{
-    top: -170px;
-  }
-  
-  #home{
-    height: 700px;
-  }
-  #meee{
-    left: -60%;
-    top: -33%;
-  }
-  .my-info{
-    font-size: 16px;
-    left: -190%;
-    width: 280%;
-    font-size: 18px;
-    top: -40px;
-  }
-  .intro{
-    top: 10px;
-    left: -50px;
-  }
-  .intro-se{
-    top: 1px;
-    left: -50px;
-
-  }
-  .secondary{
-    font-size:30px ;
-    cursor: pointer;
-    width: 150px;
-    left: -50px;
-    z-index: 1;
-  }
-  .allstacks{
-    top: 27%;
-    left: 25%;
-  }
-  .p{
-    font-size: 15px;
-  }
-  #about{
-    height: 800px;
-  }
- 
-  .presentation{
-    top: -17%;
-  }
-  .picturep{
-    left: -20%;
-  }
-  form{
-    height: 65%;
-    top: -3%;
-  }
-  
-  .tags>a{
-    font-size: 22px;
-    
-  }
-  .tags{
+@media only screen and (max-width:874px) {
+  .allstacks
+  {
     left: 10px;
-
+    top: 1100px;
   }
-  #projects{
-    height: 3200px;
-  }
-  
-  
-} 
 
-
-/* pixel2 */
-@media only screen and (max-width:411px) {
-  .intro{
-    top: -2%;
-    left: -50px;
-  }
-  .intro-se{
-    top: -2px;
-    left: -50px;
-
+}
+@media only screen and (max-width:768px) {
+  /* home */
+  .box{
+    top: 40px;
+    left: -10%;
   }
   .tags{
     left: 5%;
-    font-size: 20px;
   }
-  .my-info{
-    width: 300%;
-    height: 30%;
-    left: -170%;
-    top: 14px;
-  }
-  .p{
-  font-size: 14px
-  }
-  .allstacks{
-    top: 35%;
-    left: 110px;
-  
-  }
-  #about{
-    height: 800px;
+  /* end home */
+  /* contact */
+  #descrip{
+    left: 25%;
   }
   #meee{
-    top: -27%;
-    left: -55%;
-    border-radius: 0;
+    margin-top: -70px;
   }
-  #mee{
-    left: -120px;
+  .my-info{
+    font-size: 25px;
+    top: -100px;
   }
-  .title3{
-    left: 35%;
+  .allstacks{
+    top: 700px;
+    left: -1%;
   }
-  .secondary{
-    font-size: 26px;
-    top: 80px;
-    left: 60px;
-    z-index: 1;
+  .ul>span{
+    padding: 25px;
   }
-  .picturep{
-    left: -55px;
-  }
-  form{
-    height: 65%;
-  }
- 
-  #contact{
-    height: 600px;
-  }
-
-
-.my-info{
-  left: -210px;
+  /* end contact */
 }
-  .presentation{
-    top: -18%;
-  }
-  #projects{
-    height: 3090px;
+@media only screen and (max-width:731px) {
+  .allstacks{
+    top: 900px;
   }
 }
-@media only screen and (max-width:396px) {
-  /*  */
-  .box{
-    top: -80px;
+@media only screen and (max-width:639px) {
+  .allstacks{
+    top: 1100px;
   }
-  #projects{
-    height: 3090px;
-  }
+}
+@media only screen and (max-width:545px) {
   .tags>a{
     font-size: 22px;
   }
-  #meee{
-    width: 30%;
+  .allstacks{
+    top: 1300px;
   }
-  .my-info{
-    left: -180%;
+}
+@media only screen and (max-width:540px) {
+  .tags>a{
+    font-size: 22px;
   }
-  .secondary{
-    top: 180px;
-    z-index: 1;
+  .title{
+    font-size: 50px;
   }
   #mee{
-    top: 150px;
+    width: 60%;
   }
-  .intro{
-    top:100px;
-    left:-60px
-
+  .secondary{
+    top: -96px;
+    font-size: 30px;
+    width: 15%;
+    left: 85px;
   }
-  .intro-se{
-    top:100px;
-    left:-50px
-
+  .box{
+    top: 90px;
   }
-  .presentation{
-top: -500px;
-  }
-
-
-}
-/* galaxy s5 */
-@media only screen and (max-width:375px) {
- .p{
-   font-size: 12px;
- }
-  .presentation{
-    top: -20%;
-  }
+  /* about */
   #meee{
-    left: -68%;
+    margin-top: 40%;
+    width: 40%;
+    left: 30%;
+    border-radius: 10px;
   }
- 
- 
+  #descrip{
+  display: none;
+  }
+  .my-info{
+    width: 90%;
+    left: 8%;
+    top: 250px;
+    font-size: 20px;
 
- .title{
-   left: -14%;
+  }
+  .allstacks{
+    top:730px;
+    left: -20px;
+  }
+  .p{
+    font-size: 18px;
+  }
+  .ul>span{
+    padding: 18px;
+  }
+  .allstacks h1{
+    position: relative;
+    left: 200px;
+  }
+  /* contact */
+  form{
+    top: 190px;
+  }
+  /* projectsss */
+  .title2{
+    font-size: 40px;
+    left: 190px;
+  }
+  .body{
+    font-size: 20px;
+  }
+  .name-project{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width:536px) {
+  .allstacks{
+    top: 900px;
+  }
+}
+@media only screen and (max-width:414px) {
+  .tags>a{
+    font-size: 19px;
+  }
+  .tags{
+    left: -5%;
+  }
+  .title{
+    font-size: 35px;
+    left: 70px;
+  }
+  #mee{
+    left: -4%;
+  }
+  .secondary{
+    top: 100px;
+    width: 40%;
+    font-size: 25px;
+  }
+  .box{
+    top:150px;
+  }
+  /* about */
+  #meee{
+  margin-top: 55px; 
  }
- .tags{
-   left: -2%;
- }
- #meee{
-   left: -60%;
- }
- 
  .my-info{
-   font-size: 15px;
-   top: 25px;
-   left: -220px;
- }
- .presentation{
-   top: -17%;
- }
- 
- .secondary{
-   left: 30px;
-   z-index: 1;
- }
- .box{
-   top: -100px;
+   top: 35px;
  }
  .allstacks{
-   left: 90px;
- }
 
+ }
+ .allstacks h1{
+   left: 40%;
+ }
+ .p{
+   font-size: 20px;
+ }
+ .form-control,.btn--submit{
+   top: 40px;
+ }
  .title3{
-   top: -5px;
+   top: 3%;
+   left: 40%;
  }
- #projects{
-   height:3090px;
+ .title2{
+   left: 140px;
  }
 }
-/* motog4 */
-@media only screen and (max-width: 360px) {
- .box{
-   top: -3%;
- }
- 
-.title{
-left: -12%;
-font-size: 30px;
-top: 10;
-}
-.intro{
-  top: -2%;
-  left: -50px;
-}
-.intro-se{
-  top: -2px;
-  left: -50px;
-
-}
-
-.tags{
-  left: 1%;
-}
-.my-info{
-  width: 280%;
-  height: 30%;
-  left: -220%;
-  top: 10%;
-}
-.p{
-font-size: 14px
-}
-.allstacks{
-  top: 35%;
-
-}
-#meee{
-  top: -32%;
-  left: -80%;
-  border-radius: 0;
-}
-.secondary{
-  z-index: 1;
-}
+@media only screen and (max-width:375px) {
+  .tags>a{
+    font-size: 16px;
+  }
+  #meee{
+    top: -530px;
+  }
+  .p{
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .allstacks h1{
+    font-size: 25px;
+    left: 130px;
+  }
+  .allstacks{
+    top: 685px;
+    left: 7px;
+  }
+  .my-info{
+    top: 50px;
+  }
+  .title2{
+    font-size: 25px;
+  }
+  
 
 }
 @media only screen and (max-width:360px) {
-  .title3{
-    left: 33%;
-  }
-  
-  #mee{
-    top: 20px;
-  }
- 
-  .title2{
-    top: -45px;
-  }
-  
-  
-  .intro{
-    left: -50px;
-
-  }
-  .intro-se{
-    top: -2px;
-  left: -50px;
-
-  }
-  #meee{
-    top: -30%;
-    left: -65%;
-  }
-  .my-info{
-    top: -40px;
-    left: -180%;
+  .tags{
+    left: -30px;
   }
   .allstacks{
-    top: 25%;
-    left: 27%;
+    left: -10px;
+    top: 750px;
   }
-  #about{
-    height: 900px;
+}
+@media only screen and (max-width:320px) {
+  .tags>a{
+    font-size: 12px;
+  }
+  .tags{
+    left: -25px;
+    top: -10px;
+  }
+  .nav{
+    height: 50px;
+  }
+  .box{
+    top: 70px;
+  }
+  .title{
+    left: 35px;
+    font-size: 30px;
+  }
+  .secondary{
+    font-size: 20px;
+    left: 55px;
+  }
+  #meee{
+    margin-top: 130px;
+  }
+  .my-info{
+    font-size: 15px;
+    top: 10px;
+  }
+  .allstacks{
+top: 550px;
+left: -15px;
+  }
+  /*  */
+  .p{
+    font-size: 13px;
+  }
+  .name-project{
+    font-size: 18px;
+  }
+  .body{
+    font-size: 15px;
+  }
+  .card{
+    top: 250px;
+  }
+  .title2{
+    left: 110px;
+  }
+
+}
+@media only screen and (max-width:280px) {
+  .title2{
+    left: 110px;
+  }
+  .tags{
+    column-gap: 35px;
 
   }
-  #projects{
-    height: 3000px;
-
+}
+@media only screen and (max-width:249px) {
+  .allstacks{
+    top: 700px;
   }
-  .presentation{
-    top: -20%;
+}
+@media only screen and (max-width:220px) {
+  *{
+    display: none;
   }
- .picturep{
-   left: -25%;
- }
- #contact{
-   height: 600px;
- }
- .tags>a{
-   font-size: 20px;
- }
- .tags{
-   top: 10px;
- }
- .secondary{
-  top: 90px;
-  font-size: 25px;
-  height: 40px;
-  left: 50px;
-  z-index: 1;
-
 }
- }
-
- @media only screen and (max-width:320px) {
- 
-   .tags>a{
-     font-size: 17px;
-   }
-   .my-info{
-     top: -10px;
-     left: -170%;
-   }
-   .allstacks{
-     top: 30%;
-
-   }
-   .p{
-font-size: 10px;
-   }
-   #projects{
-     height: 3000px;
-   }
-   .intro{
-     left: -40px;
-   }
-   .intro-se{
-     top: 10px;
-   }
-   #mee{
-     top: 10px;
-     left:-100px
-   }
-   .secondary{
-     top: 40px;
-     z-index: 1;
-   }
-   .btn{
-top: -5px;
-   }
-
- }
- @media only screen and (max-width:280px) {
-.intro{
-  top:50px;
-  left: 10px;
-  
-}
-.intro-se{
-  top:50px;
-  left: 10px;
-}
-#meee{
-  left:-190px
-}
-#mee{
-  top: 10%;
-  width: 400px;
-  left: -70px;
-}
-.my-info{
-  font-size: 15px;
-  top: -26px;
-  left: -175px;
-}
-.allstacks{
-  left: 70px;
-}
-.social{
-  left: -220px;
-}
-.secondary{
-  top: 110px;
-  left: 60px;
-}
-.tags>a{
-  font-size: 14px;
-
-}
-.secondary{
-  z-index: 1;
-} }
- /* @media only screen and (max-width: 168px) {
-   #projects{
-     height: 400vh;
-   }
-   #home{
-     height: 120vh;
-   }
-   #about{
-     height: 120vh;
-   }
- } */
