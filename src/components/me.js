@@ -21,16 +21,19 @@ import Pdf from '../Documents/resume.pdf';
 <span>
  <p className='p'>CSS</p>
 <p className='p'>React</p>
-<p className='p'>JSON</p>   
+<p className='p'>Redux</p>
 </span>
 
 <span>
  <p className='p'>SQL</p>
 <p className='p'>PostgreSQL</p>
 <p className='p'>Bootstrap</p>   
+<p className='p'>Git</p>
+
 </span>
 <span>
-  <p className='p'>Git</p>
+<p className='p'>JSON</p>   
+
 <p className='p'>RESTful APIs</p>
 <p className='p'>Ruby on Rails</p> 
 <p className='p'>React Hooks</p> 

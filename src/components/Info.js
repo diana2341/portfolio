@@ -23,11 +23,32 @@ import endangered from '../imgs/endangered.png'
 import illucid from '../imgs/illucid.png'
 import cupcake from '../imgs/cupcakes.png'
 import travel from '../imgs/travel.png'
+import shopmart from '../imgs/shopmart.png'
 
 
 
 
 const info = [
+    {
+        id:5,
+        class:'shopmart',
+        main:shopmart,
+
+        name: 'Shop-mart',
+        tools:'Ruby Rails, CSS,HTML,React,Redux',
+        // video:"https://streamable.com/e/ai4u1c",
+        pic1:home1,
+        pic2:home2,
+        pic3:home3,
+        pic4:home4,
+        pic5:home5,
+        pic6:home6,
+        description:'A  ecommerce site for clothing powered with  React + Redux ',
+        gitLink:'https://github.com/diana2341/shopMart-front',
+        // youtube:'https://streamable.com/ai4u1c',
+        deploy:'https://shop-mart-us.netlify.app/'
+
+    },
     {
       id:1,
       main:endangered,
@@ -49,6 +70,24 @@ const info = [
       youtube:'https://www.youtube.com/watch?v=xTjHOjz2xGA&t=13s',
     //   deploy:'https://endangered-lives.herokuapp.com/'
       
+    },
+    {
+        id:4,
+        class:'travel',
+        main:travel,
+
+        name: 'Travel Rails',
+        tools:'Ruby Rails, CSS,HTML,Bulma.io',
+        video:"https://streamable.com/e/ai4u1c",
+        pic1:home1,
+        pic2:home2,
+        pic3:home3,
+        pic4:home4,
+        pic5:home5,
+        pic6:home6,
+        description:'A site for hosting homes as stays for people on vacation and where homes, apartments, or rooms can be booked by people traveling. Users can become hosts and post their homes or find a home.',
+        gitLink:'https://github.com/diana2341/My_Travel_rails',
+        youtube:'https://streamable.com/ai4u1c',
     },
     {
         id:2,
@@ -85,25 +124,8 @@ const info = [
         gitLink:'https://github.com/diana2341/mod4-sugarlips_cupcakes-client',
         youtube:'https://www.youtube.com/watch?v=J1_E9mqnAM8&t=2s',
         // deploy:'https://illucid--beats.herokuapp.com/'
-    },
-    {
-        id:4,
-        class:'travel',
-        main:travel,
-
-        name: 'Travel Rails',
-        tools:'Ruby Rails, CSS,HTML,Bulma.io',
-        video:"https://streamable.com/e/ai4u1c",
-        pic1:home1,
-        pic2:home2,
-        pic3:home3,
-        pic4:home4,
-        pic5:home5,
-        pic6:home6,
-        description:'A site for hosting homes as stays for people on vacation and where homes, apartments, or rooms can be booked by people traveling. Users can become hosts and post their homes or find a home.',
-        gitLink:'https://github.com/diana2341/My_Travel_rails',
-        youtube:'https://streamable.com/ai4u1c',
     }
+
   ];
   
   export default info;

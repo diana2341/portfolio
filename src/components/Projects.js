@@ -66,7 +66,7 @@ class Projects extends React.Component{
  </div>
  <div className='external-l'>
  <a className='e-l'href={info.gitLink}><AiFillGithub size={25}/></a>
- <a className='e-l'href={info.youtube}><RiYoutubeLine size={25}/></a>
+ {info.youtube?<a className='e-l'href={info.youtube}><RiYoutubeLine size={25}/></a>:''}
  { info.deploy?<a className='e-l'href={info.deploy}><HiExternalLink size={25}/></a>:''}
  </div>
       </Card.Body>
