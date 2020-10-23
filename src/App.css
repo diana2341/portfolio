@@ -857,6 +857,7 @@ animation: down 2s linear infinite;
 .m-s{
   font-size: 35px;
   left: 10px;
+  z-index: -1;
 }
 .my-info{
 font-size: 30px;
@@ -919,6 +920,7 @@ left: 3%;;
   {
     left: 10px;
     top: 1100px;
+    z-index: -1;
   }
 
 }
@@ -1104,16 +1106,28 @@ left: 3%;;
   .allstacks h1{
     font-size: 25px;
     left: 130px;
+    z-index: 1;
+
+  }
+  .nav{
+    z-index: 999;
+  }
+  .allstacks.m-s h1{
+    z-index: -1;
+    border: solid black;
   }
   .allstacks{
-    top: 685px;
+    z-index: -1;
+    top: 785px;
     left: 7px;
   }
   .my-info{
-    top: 50px;
+    top: 100px;
   }
   .title2{
     font-size: 25px;
+    margin-top: 20px;
+    top: -10px;
   }
   
 
