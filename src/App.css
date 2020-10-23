@@ -875,7 +875,7 @@ z-index: 1;
   width: 100%;
 font-size: 30px;
   left: 0;
-  top: 10px;
+  top: 50px;
   border-radius: 0px;
   margin-bottom: 0px;
 }
@@ -899,8 +899,11 @@ left: 3%;;
   width: 93%;
 }
 }
+.column.card-deck{
+  top: 2px;
+}
 .body.card-body{
- top: -310px;
+ top: 10px;
 }
 @media only screen and (max-width:874px) {
   .allstacks
