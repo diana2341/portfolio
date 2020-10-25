@@ -123,7 +123,7 @@ const info = [
         description:'An ecommerce site for a bakery that sells cupcakes, where  users can order any amount of these treats to be delivered to their homes!',
         gitLink:'https://github.com/diana2341/mod4-sugarlips_cupcakes-client',
         youtube:'https://www.youtube.com/watch?v=J1_E9mqnAM8&t=2s',
-        // deploy:'https://illucid--beats.herokuapp.com/'
+        deploy:'https://illucid-beats.netlify.app/'
     }
 
   ];
