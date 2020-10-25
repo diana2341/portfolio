@@ -102,7 +102,7 @@ const info = [
         description:'A sound machine used to reduce stress, increase concentration or enable the ability to sleep better with ambient noises. Users can make a mix of ambient noises and listen to others creations.',
         gitLink:'https://github.com/diana2341/illucid-beats-front',
         youtube:'https://www.youtube.com/watch?v=pOq3eoo0Mjs',
-        // deploy:'https://illucid--beats.herokuapp.com/'
+        deploy:'https://illucid-beats.netlify.app/'
     },
     {
         id:3,
@@ -123,7 +123,6 @@ const info = [
         description:'An ecommerce site for a bakery that sells cupcakes, where  users can order any amount of these treats to be delivered to their homes!',
         gitLink:'https://github.com/diana2341/mod4-sugarlips_cupcakes-client',
         youtube:'https://www.youtube.com/watch?v=J1_E9mqnAM8&t=2s',
-        deploy:'https://illucid-beats.netlify.app/'
     }
 
   ];
