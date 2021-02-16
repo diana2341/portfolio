@@ -309,7 +309,7 @@ class About extends React.Component{
       
       
                        {/* <a href = {Pdf} >resume</a> */}
-                       <a className='secondary' href='https://drive.google.com/file/d/1OplJ5fdaGR1doApLFS8AYn8eNCSUUxeU/view?usp=sharing'>
+                       <a className='secondary' href='https://drive.google.com/file/d/1MdqbHYKrEthgH0A5017wC_SOvkqMF3ns/view?usp=sharing'>
             Resume
          </a>
         {/* <a href='#about'><div className='arrow'></div></a>  */}
